@@ -1,7 +1,7 @@
 <?php
 
-    if(isset($_GET['kode'])){
-        $sql_cek = "SELECT * FROM TB_PEGAWAI WHERE 	NIP='".$_GET['kode']."'";
+    if(isset($_GET['nip'])){
+        $sql_cek = "SELECT * FROM TB_PEGAWAI WHERE 	NIP='".$_GET['nip']."'";
         $query_cek = mysqli_query($koneksi, $sql_cek);
         $data_cek = mysqli_fetch_array($query_cek,MYSQLI_BOTH);
     }
@@ -19,7 +19,7 @@
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">NIP</label>
                 <div class="col-sm-5" <input type="text" class="form-control" id="nip" name="nip"
-                    value="<?php echo $data_cek['NIP']; ?>" readonly />
+                    value="<?php echo $data_cek['nip']; ?>" readonly />
             </div>
         </div>
 
@@ -27,7 +27,7 @@
             <label class="col-sm-2 col-form-label">Nama Pegawai</label>
             <div class="col-sm-5">
                 <input type="text" class="form-control" id="nama" name="nama"
-                    value="<?php echo $data_cek['NAMA']; ?>" />
+                    value="<?php echo $data_cek['nama']; ?>" />
             </div>
         </div>
 
@@ -112,8 +112,8 @@ if (isset ($_POST['Ubah'])){
             unlink("foto/$foto");}
 
         $sql_ubah = "UPDATE tb_pegawai SET
-			NAMA='".$_POST['NAMA']."',
-			ALAMAT='".$_POST['ALAMAT']."',
+			nama='".$_POST['nama']."',
+			alamat='".$_POST['alamat']."',
 			NO_HP='".$_POST['NO_HP']."',
 			STATUS='".$_POST['STATUS']."',
 			JABATAN='".$_POST['JABATAN']."',
