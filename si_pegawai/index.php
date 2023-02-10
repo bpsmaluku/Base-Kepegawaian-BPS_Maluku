@@ -223,16 +223,16 @@
 
 				//Pengguna
 				case 'data-pengguna':
-					include "admin/pengguna/data_pengguna.php";
+					include "admin/penggona/data_pengguna.php";
 					break;
 				case 'add-pengguna':
-					include "admin/pengguna/add_pengguna.php";
+					include "admin/penggona/add_pengguna.php";
 					break;
 				case 'edit-pengguna':
-					include "admin/pengguna/edit_pengguna.php";
+					include "admin/penggona/edit_pengguna.php";
 					break;
 				case 'del-pengguna':
-					include "admin/pengguna/del_pengguna.php";
+					include "admin/penggona/del_pengguna.php";
 					break;
 
 				//Asrama

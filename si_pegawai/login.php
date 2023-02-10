@@ -10,7 +10,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>login | Data Kepegawaian</title>
-    <link rel="icon" href="dist/img/user.png">
+    <link rel="icon" href="dist/img/Asset 1.png">
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -40,7 +40,7 @@
                     </a>
                 </div>
                 <center>
-                    <img src="dist/img/logo.png" width=180px />
+                    <img src="dist/img/Asset 1.png" width=180px />
                     <br>
                     <br>
                 </center>
