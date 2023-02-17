@@ -41,7 +41,7 @@
                             <?php echo $no++; ?>
                         </td>
                         <td align="center">
-                            <img src="foto/<?php echo $data['FOTO']; ?>" width="60px" />
+                            <img src="foto/<?php echo $data['FOTO']; ?>" width="40px" />
                         </td>
                         <td>
                             <?php echo $data['NIP']; ?>

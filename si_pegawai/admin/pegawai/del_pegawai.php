@@ -13,7 +13,7 @@ if(isset($_GET['kode'])){
         unlink("foto/$foto");
     }
 
-    $sql_hapus = "DELETE FROM tb_pegawai WHERE NIP ='".$_GET['kode']."'";
+    $sql_hapus = "DELETE FROM tb_pegawai WHERE nip ='".$_GET['kode']."'";
     $query_hapus = mysqli_query($koneksi, $sql_hapus);
     if ($query_hapus) {
         echo "<script>

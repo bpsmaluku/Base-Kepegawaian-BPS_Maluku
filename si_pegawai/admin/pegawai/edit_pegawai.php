@@ -1,7 +1,7 @@
 <?php
 
     if(isset($_GET['kode'])){
-        $sql_cek = "SELECT * FROM tb_pegawai WHERE 	NIP ='".$_GET['kode']."'";
+        $sql_cek = "SELECT * FROM tb_pegawai WHERE 	nip ='".$_GET['kode']."'";
         $query_cek = mysqli_query($koneksi, $sql_cek);
         $data_cek = mysqli_fetch_array($query_cek,MYSQLI_BOTH);
     }
@@ -18,7 +18,7 @@
 
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">NIP</label>
-                <div class="col-sm-5" <input type="text" class="form-control" id="NIP" name="NIP"
+                <div class="col-sm-5" <input type="text" class="form-control" id="NIP" name="nip"
                     value="<?php echo $data_cek['NIP']; ?>" readonly />
             </div>
         </div>
@@ -111,26 +111,27 @@ if (isset ($_POST['Ubah'])){
             if (file_exists("foto/$foto")){
             unlink("foto/$foto");}
 
-        $sql_ubah = "UPDATE tb_pegawai SET
-			nama='".$_POST['nama']."',
+        $sql_ubah = " UPDATE tb_pegawai SET 
+            nama='".$_POST['nama']."',
 			alamat='".$_POST['alamat']."',
 			no_hp='".$_POST['no_hp']."',
 			status='".$_POST['status']."',
 			jabatan='".$_POST['jabatan']."',
-			foto='".$nama_file."'		
-            WHERE NIP ='".$_POST['NIP']."'";
+			foto='".$nama_file."'
+            
+            WHERE nip='".$_POST['NIP']."'";
         $query_ubah = mysqli_query($koneksi, $sql_ubah);
-
     }elseif(empty($sumber)){
 		$sql_ubah = " UPDATE tb_pegawai SET
 		nama = '".$_POST['nama']."',
 		alamat = '".$_POST['alamat']."',
 		no_hp = '".$_POST['no_hp']."',
 		status ='".$_POST['status']."',
-		jabatan = '".$_POST['jabatan']."'		
-		WHERE NIP = '".$_POST['NIP']."'";
+		jabatan = '".$_POST['jabatan']."'
+        
+		WHERE nip = '".$_POST['NIP']."'";
 	$query_ubah = mysqli_query($koneksi, $sql_ubah);
-        }
+}
 
     if ($query_ubah) {
         echo "<script>
