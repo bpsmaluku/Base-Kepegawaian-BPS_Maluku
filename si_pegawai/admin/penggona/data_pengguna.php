@@ -19,6 +19,8 @@
                         <th>Nama User</th>
                         <th>Username</th>
                         <th>Level</th>
+                        <th>No HP</th>
+                        <th>Foto</th>
                         <th>Aksi</th>
                     </tr>
                 </thead>
@@ -42,6 +44,12 @@
                         </td>
                         <td>
                             <?php echo $data['LEVEL']; ?>
+                        </td>
+                        <td>
+                            <?php echo $data['NO_HP']; ?>
+                        </td>
+                        <td align="center">
+                            <img src="foto/<?php echo $data['FOTO']; ?>" width="70px" />
                         </td>
                         <td>
                             <a href="?page=edit-pengguna&kode=<?php echo $data['ID_PENGGUNA']; ?>" title="Ubah"

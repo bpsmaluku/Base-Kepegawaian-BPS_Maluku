@@ -28,7 +28,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>SI Data Pegawai</title>
-    <link rel="icon" href="dist/img/logo.png">
+    <link rel="icon" href="dist/img/PNG/LG.png">
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -84,17 +84,15 @@
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-            <a href="index.php" class="brand-link">
-                <img src="dist/img/logo.png" alt="AdminLTE Logo" class="brand-image" style="opacity: .8">
-                <span class="brand-text"> SI DATA PEGAWAI</span>
-            </a>
 
             <!-- Sidebar -->
             <div class="sidebar">
                 <!-- Sidebar user (optional) -->
                 <div class="user-panel mt-2 pb-2 mb-2 d-flex">
                     <div class="image">
-                        <img src="dist/img/user.png" class="img-circle elevation-1" alt="User Image">
+                        <td rowspan="6" align="">
+                            <img src="dist/img/PNG/Asset 1.png" width="1px" />
+                        </td>
                     </div>
                     <div class="info">
                         <a href="index.php" class="d-block">
@@ -286,12 +284,12 @@
         <footer class="main-footer">
             <div class="float-right d-none d-sm-block">
                 Copyright &copy;
-                <a target="_blank" href="https://www.youtube.com/channel/UCDxjOzW7F0JOkltlXT6g7AQ">
-                    <strong> elseif software house</strong>
+                <a target="_blank" href="https:/github.com/">
+                    <strong> BPS PROVINSI MALUKU</strong>
                 </a>
                 All rights reserved.
             </div>
-            <b>Created 2020</b>
+            <b>Created 2023</b>
         </footer>
 
         <!-- Control Sidebar -->

@@ -61,6 +61,24 @@
                 </div>
             </div>
 
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">No HP</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="NO_HP" name="NO_HP"
+                        value="<?php echo $data_cek['NO_HP']; ?>" />
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Ubah Foto</label>
+                <div class="col-sm-6">
+                    <input type="file" id="foto" name="foto">
+                    <p class="help-block">
+                        <font color="red">"Format file Jpg/Png"</font>
+                    </p>
+                </div>
+            </div>
+
         </div>
         <div class="card-footer">
             <input type="submit" name="Ubah" value="Simpan" class="btn btn-success">
@@ -72,6 +90,11 @@
 
 
 <?php
+
+$sumber = @$_FILES['foto']['tmp_name'];
+	$target = 'foto/';
+	$nama_file = @$_FILES['foto']['name'];
+	$pindah = move_uploaded_file($sumber, $target.$nama_file);
 
     if (isset ($_POST['Ubah'])){
     $sql_ubah = "UPDATE tb_pengguna SET
