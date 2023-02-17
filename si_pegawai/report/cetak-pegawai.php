@@ -90,6 +90,20 @@
                     <?php echo $data['JABATAN']; ?>
                 </td>
             </tr>
+            <tr>
+                <td>Dosir</td>
+                <td>:</td>
+                <td>
+                    <?php echo $data['DOSIR']; ?>
+                </td>
+            </tr>
+            <tr>
+                <td>Rak</td>
+                <td>:</td>
+                <td>
+                    <?php echo $data['RAK']; ?>
+                </td>
+            </tr>
             <?php } ?>
         </tbody>
     </table>

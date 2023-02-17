@@ -19,7 +19,12 @@
                         <th>Foto</th>
                         <th>NIP</th>
                         <th>Nama</th>
+                        <th>Alamat</th>
+                        <th>No_HP</th>
+                        <th>Status</th>
                         <th>Jabatan</th>
+                        <th>Dosir</th>
+                        <th>Rak</th>
                         <th>Aksi</th>
                     </tr>
                 </thead>
@@ -36,7 +41,7 @@
                             <?php echo $no++; ?>
                         </td>
                         <td align="center">
-                            <img src="foto/<?php echo $data['FOTO']; ?>" width="70px" />
+                            <img src="foto/<?php echo $data['FOTO']; ?>" width="60px" />
                         </td>
                         <td>
                             <?php echo $data['NIP']; ?>
@@ -45,7 +50,22 @@
                             <?php echo $data['NAMA']; ?>
                         </td>
                         <td>
+                            <?php echo $data['ALAMAT']; ?>
+                        </td>
+                        <td>
+                            <?php echo $data['NO_HP']; ?>
+                        </td>
+                        <td>
+                            <?php echo $data['STATUS']; ?>
+                        </td>
+                        <td>
                             <?php echo $data['JABATAN']; ?>
+                        </td>
+                        <td>
+                            <?php echo $data['DOSIR']; ?>
+                        </td>
+                        <td>
+                            <?php echo $data['RAK']; ?>
                         </td>
 
                         <td>

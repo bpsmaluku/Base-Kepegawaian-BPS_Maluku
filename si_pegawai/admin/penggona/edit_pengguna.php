@@ -61,6 +61,14 @@
                 </div>
             </div>
 
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">No HP</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="NO_HP" name="NO_HP"
+                        value="<?php echo $data_cek['NO_HP']; ?>" />
+                </div>
+            </div>
+
         </div>
         <div class="card-footer">
             <input type="submit" name="Ubah" value="Simpan" class="btn btn-success">

@@ -1,7 +1,7 @@
 <?php
 
     if(isset($_GET['kode'])){
-        $sql_cek = "SELECT * from tb_pegawai WHERE nip='".$_GET['kode']."'";
+        $sql_cek = "SELECT * FROM tb_pegawai WHERE nip='".$_GET['kode']."'";
         $query_cek = mysqli_query($koneksi, $sql_cek);
         $data_cek = mysqli_fetch_array($query_cek,MYSQLI_BOTH);
     }
@@ -20,7 +20,7 @@
                 <table class="table">
                     <tbody>
                         <tr>
-                            <td style="width: 150px">
+                            <td style="width: 100px">
                                 <b>NIP</b>
                             </td>
                             <td>:
@@ -28,7 +28,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td style="width: 150px">
+                            <td style="width: 100px">
                                 <b>Nama</b>
                             </td>
                             <td>:
@@ -36,7 +36,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td style="width: 150px">
+                            <td style="width: 100px">
                                 <b>Alamat</b>
                             </td>
                             <td>:
@@ -44,7 +44,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td style="width: 150px">
+                            <td style="width: 100px">
                                 <b>No HP</b>
                             </td>
                             <td>:
@@ -52,7 +52,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td style="width: 150px">
+                            <td style="width: 100px">
                                 <b>Status</b>
                             </td>
                             <td>:
@@ -60,11 +60,27 @@
                             </td>
                         </tr>
                         <tr>
-                            <td style="width: 150px">
+                            <td style="width: 100px">
                                 <b>Jabatan</b>
                             </td>
                             <td>:
                                 <?php echo $data_cek['JABATAN']; ?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 100px">
+                                <b>Dosir</b>
+                            </td>
+                            <td>:
+                                <?php echo $data_cek['DOSIR']; ?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 100px">
+                                <b>Rak</b>
+                            </td>
+                            <td>:
+                                <?php echo $data_cek['RAK']; ?>
                             </td>
                         </tr>
                     </tbody>

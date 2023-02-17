@@ -1,7 +1,7 @@
 <?php
 
-    if(isset($_GET['nip'])){
-        $sql_cek = "SELECT * FROM TB_PEGAWAI WHERE 	NIP='".$_GET['nip']."'";
+    if(isset($_GET['kode'])){
+        $sql_cek = "SELECT * FROM tb_pegawai WHERE 	NIP ='".$_GET['kode']."'";
         $query_cek = mysqli_query($koneksi, $sql_cek);
         $data_cek = mysqli_fetch_array($query_cek,MYSQLI_BOTH);
     }
@@ -18,8 +18,8 @@
 
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">NIP</label>
-                <div class="col-sm-5" <input type="text" class="form-control" id="nip" name="nip"
-                    value="<?php echo $data_cek['nip']; ?>" readonly />
+                <div class="col-sm-5" <input type="text" class="form-control" id="NIP" name="NIP"
+                    value="<?php echo $data_cek['NIP']; ?>" readonly />
             </div>
         </div>
 
@@ -27,7 +27,7 @@
             <label class="col-sm-2 col-form-label">Nama Pegawai</label>
             <div class="col-sm-5">
                 <input type="text" class="form-control" id="nama" name="nama"
-                    value="<?php echo $data_cek['nama']; ?>" />
+                    value="<?php echo $data_cek['NAMA']; ?>" />
             </div>
         </div>
 
@@ -114,21 +114,21 @@ if (isset ($_POST['Ubah'])){
         $sql_ubah = "UPDATE tb_pegawai SET
 			nama='".$_POST['nama']."',
 			alamat='".$_POST['alamat']."',
-			NO_HP='".$_POST['NO_HP']."',
-			STATUS='".$_POST['STATUS']."',
-			JABATAN='".$_POST['JABATAN']."',
-			FOTO='".$nama_file."'		
-            WHERE nip='".$_POST['nip']."'";
+			no_hp='".$_POST['no_hp']."',
+			status='".$_POST['status']."',
+			jabatan='".$_POST['jabatan']."',
+			foto='".$nama_file."'		
+            WHERE NIP ='".$_POST['NIP']."'";
         $query_ubah = mysqli_query($koneksi, $sql_ubah);
 
     }elseif(empty($sumber)){
 		$sql_ubah = " UPDATE tb_pegawai SET
-		nama ='".$_POST['nama']."',
+		nama = '".$_POST['nama']."',
 		alamat = '".$_POST['alamat']."',
 		no_hp = '".$_POST['no_hp']."',
 		status ='".$_POST['status']."',
-		jabatan='".$_POST['jabatan']."'		
-		WHERE nip='".$_POST['nip']."'";
+		jabatan = '".$_POST['jabatan']."'		
+		WHERE NIP = '".$_POST['NIP']."'";
 	$query_ubah = mysqli_query($koneksi, $sql_ubah);
         }
 
