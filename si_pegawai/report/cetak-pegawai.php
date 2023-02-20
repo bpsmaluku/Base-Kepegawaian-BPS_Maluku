@@ -63,31 +63,10 @@
                 </td>
             </tr>
             <tr>
-                <td>Alamat</td>
-                <td>:</td>
-                <td>
-                    <?php echo $data['ALAMAT']; ?>
-                </td>
-            </tr>
-            <tr>
-                <td>No HP</td>
-                <td>:</td>
-                <td>
-                    <?php echo $data['NO_HP']; ?>
-                </td>
-            </tr>
-            <tr>
                 <td>Status</td>
                 <td>:</td>
                 <td>
                     <?php echo $data['STATUS']; ?>
-                </td>
-            </tr>
-            <tr>
-                <td>Jabatan</td>
-                <td>:</td>
-                <td>
-                    <?php echo $data['JABATAN']; ?>
                 </td>
             </tr>
             <tr>

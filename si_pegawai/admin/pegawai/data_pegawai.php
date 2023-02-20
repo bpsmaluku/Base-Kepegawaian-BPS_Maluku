@@ -19,10 +19,7 @@
                         <th>Foto</th>
                         <th>NIP</th>
                         <th>Nama</th>
-                        <th>Alamat</th>
-                        <th>No_HP</th>
                         <th>Status</th>
-                        <th>Jabatan</th>
                         <th>Dosir</th>
                         <th>Rak</th>
                         <th>Aksi</th>
@@ -41,7 +38,7 @@
                             <?php echo $no++; ?>
                         </td>
                         <td align="center">
-                            <img src="foto/<?php echo $data['FOTO']; ?>" width="40px" />
+                            <img src="foto/<?php echo $data['FOTO']; ?>" width="150px" />
                         </td>
                         <td>
                             <?php echo $data['NIP']; ?>
@@ -50,16 +47,7 @@
                             <?php echo $data['NAMA']; ?>
                         </td>
                         <td>
-                            <?php echo $data['ALAMAT']; ?>
-                        </td>
-                        <td>
-                            <?php echo $data['NO_HP']; ?>
-                        </td>
-                        <td>
                             <?php echo $data['STATUS']; ?>
-                        </td>
-                        <td>
-                            <?php echo $data['JABATAN']; ?>
                         </td>
                         <td>
                             <?php echo $data['DOSIR']; ?>
@@ -73,10 +61,6 @@
                                 class="btn btn-info btn-sm">
                                 <i class="fa fa-eye"></i>
                             </a>
-                            </a>
-                            <a href="?page=edit-pegawai&kode=<?php echo $data['NIP']; ?>" title="Ubah"
-                                class="btn btn-success btn-sm">
-                                <i class="fa fa-edit"></i>
                             </a>
                             <a href="?page=del-pegawai&kode=<?php echo $data['NIP']; ?>"
                                 onclick="return confirm('Apakah anda yakin hapus data ini ?')" title="Hapus"

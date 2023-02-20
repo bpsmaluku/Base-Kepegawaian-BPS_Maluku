@@ -27,8 +27,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>SI Data Pegawai</title>
-    <link rel="icon" href="dist/img/PNG/LG.png">
+    <title>SMILE - Sistem Manajemen File</title>
+    <link rel="icon" href="./dist/img/Asset 1.png">
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -71,6 +71,7 @@
                     <a href="index.php" class="nav-link">
                         <font color="white">
                             <b>
+                                <img src="./dist/img/Asset 1.png" width="25px" />
                                 <?php echo $nama; ?>
                             </b>
                         </font>

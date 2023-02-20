@@ -22,34 +22,13 @@
             </div>
 
             <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Alamat</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" id="ALAMAT" name="alamat" placeholder="Alamat" required>
-                </div>
-            </div>
-
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label">No HP</label>
-                <div class="col-sm-5">
-                    <input type="text" class="form-control" id="NO_HP" name="no_hp" placeholder="No HP" required>
-                </div>
-            </div>
-
-            <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Status</label>
                 <div class="col-sm-5">
                     <select name="status" id="status" class="form-control">
                         <option>- Pilih -</option>
-                        <option>Pegawai</option>
-                        <option>Honorer</option>
+                        <option>PNS</option>
+                        <option>PPNPN</option>
                     </select>
-                </div>
-            </div>
-
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Jabatan</label>
-                <div class="col-sm-5">
-                    <input type="text" class="form-control" id="JABATAN" name="jabatan" placeholder="Jabatan" required>
                 </div>
             </div>
 
@@ -94,13 +73,10 @@
     if (isset ($_POST['Simpan'])){
 
 		if(!empty($sumber)){
-        $sql_simpan = "INSERT INTO tb_pegawai (nip, nama, alamat, no_hp, status, jabatan, dosir, rak, foto) VALUES (
+        $sql_simpan = "INSERT INTO tb_pegawai (nip, nama, status, dosir, rak, foto) VALUES (
             '".$_POST['nip']."',
 			'".$_POST['nama']."',
-			'".$_POST['alamat']."',
-			'".$_POST['no_hp']."',
 			'".$_POST['status']."',
-			'".$_POST['jabatan']."',
 			'".$_POST['dosir']."',
 			'".$_POST['rak']."',
             '".$nama_file."')";
@@ -122,7 +98,8 @@
           }
       })</script>";
 	}
-	}elseif(empty($sumber)){
+	}
+    elseif(empty($sumber)){
 		echo "<script>
 		Swal.fire({title: 'Gagal, Foto Wajib Diisi',text: '',icon: 'error',confirmButtonText: 'OK'
 		}).then((result) => {
