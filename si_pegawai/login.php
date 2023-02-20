@@ -9,7 +9,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>login | Data Kepegawaian BPS Provinsi Maluku</title>
+    <title>login | SMILE</title>
     <link rel="icon" href="dist/img/Asset 1.png">
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,8 +35,10 @@
                 <div class="login-logo">
                     <a href="login.php">
                         <font color="blue">
+                            <br>
                             <b>
-                                <h4> -DATA PEGAWAI BPS PROVINSI MALUKU- </h4>
+                                <h4> - SMILE - </h4>
+                                <h6>Sistem Manajemen File</h6>
                             </b>
                         </font>
                     </a>

@@ -32,43 +32,34 @@
         </div>
 
         <div class="form-group row">
-            <label class="col-sm-2 col-form-label">Alamat</label>
-            <div class="col-sm-10">
-                <input type="text" class="form-control" id="alamat" name="alamat"
-                    value="<?php echo $data_cek['ALAMAT']; ?>" />
-            </div>
-        </div>
-
-        <div class="form-group row">
-            <label class="col-sm-2 col-form-label">No HP</label>
-            <div class="col-sm-5">
-                <input type="text" class="form-control" id="no_hp" name="no_hp"
-                    value="<?php echo $data_cek['NO_HP']; ?>" />
-            </div>
-        </div>
-
-        <div class="form-group row">
             <label class="col-sm-2 col-form-label">Status</label>
             <div class="col-sm-4">
                 <select name="status" id="status" class="form-control">
                     <option value="">-- Pilih --</option>
                     <?php
                 //cek data yg dipilih sebelumnya
-                if ($data_cek['STATUS'] == "Pegawai") echo "<option value='Pegawai' selected>Pegawai</option>";
-                else echo "<option value='Pegawai'>Pegawai</option>";
+                if ($data_cek['STATUS'] == "PNS") echo "<option value='PNS' selected>PNS</option>";
+                else echo "<option value='PNS'>PNS</option>";
 
-                if ($data_cek['STATUS'] == "Honorer") echo "<option value='Honorer' selected>Honorer</option>";
-                else echo "<option value='Honorer'>Honorer</option>";
+                if ($data_cek['STATUS'] == "PPNPN") echo "<option value='PPNPN' selected>PPNPN</option>";
+                else echo "<option value='PPNPN'>PPNPN</option>";
             			?>
                 </select>
             </div>
         </div>
 
         <div class="form-group row">
-            <label class="col-sm-2 col-form-label">Jabatan</label>
+            <label class="col-sm-2 col-form-label">Dosir</label>
             <div class="col-sm-5">
-                <input type="text" class="form-control" id="jabatan" name="jabatan"
-                    value="<?php echo $data_cek['JABATAN']; ?>" />
+                <input type="text" class="form-control" id="dosir" name="dosir"
+                    value="<?php echo $data_cek['DOSIR']; ?>" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Rak</label>
+            <div class="col-sm-5">
+                <input type="text" class="form-control" id="rak" name="rak" value="<?php echo $data_cek['RAK']; ?>" />
             </div>
         </div>
 
@@ -113,10 +104,9 @@ if (isset ($_POST['Ubah'])){
 
         $sql_ubah = " UPDATE tb_pegawai SET 
             nama='".$_POST['nama']."',
-			alamat='".$_POST['alamat']."',
-			no_hp='".$_POST['no_hp']."',
 			status='".$_POST['status']."',
-			jabatan='".$_POST['jabatan']."',
+            dosir='".$_POST['dosir']."',
+            rak='".$_POST['rak']."',
 			foto='".$nama_file."'
             
             WHERE nip='".$_POST['NIP']."'";
@@ -124,10 +114,9 @@ if (isset ($_POST['Ubah'])){
     }elseif(empty($sumber)){
 		$sql_ubah = " UPDATE tb_pegawai SET
 		nama = '".$_POST['nama']."',
-		alamat = '".$_POST['alamat']."',
-		no_hp = '".$_POST['no_hp']."',
 		status ='".$_POST['status']."',
-		jabatan = '".$_POST['jabatan']."'
+        dosir ='".$_POST['dosir']."',
+        rak ='".$_POST['rak']."',
         
 		WHERE nip = '".$_POST['NIP']."'";
 	$query_ubah = mysqli_query($koneksi, $sql_ubah);

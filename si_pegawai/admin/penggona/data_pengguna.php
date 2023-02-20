@@ -49,7 +49,7 @@
                             <?php echo $data['NO_HP']; ?>
                         </td>
                         <td align="center">
-                            <img src="foto/<?php echo $data['FOTO']; ?>" width="70px" />
+                            <img src="foto/<?php echo $data['FOTO']; ?>" width="140px" />
                         </td>
                         <td>
                             <a href="?page=edit-pengguna&kode=<?php echo $data['ID_PENGGUNA']; ?>" title="Ubah"

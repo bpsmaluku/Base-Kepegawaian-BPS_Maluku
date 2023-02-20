@@ -11,10 +11,13 @@
 <div class="card card-info">
     <div class="card-header">
         <h3 class="card-title">
-            <i class="fa fa-flag"></i> Profil Perusahaan
+            <h1>
+                <b>SMILE</b>
+            </h1>
+            <h6>Sistem Manajemen File</h6>
         </h3>
     </div>
-    <form action="" method="post" enctype="multipart/form-data">
+    <!-- <form action="" method="post" enctype="multipart/form-data">
         <div class="card-body">
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Nama Perusahaan</label>
@@ -39,7 +42,7 @@
             </div>
 
         </div>
-    </form>
+    </form> -->
 </div>
 
 <?php
@@ -52,7 +55,7 @@
 ?>
 
 <?php
-	$sql = $koneksi->query("SELECT count(nip) as putra from tb_pegawai where status='Pegawai'");
+	$sql = $koneksi->query("SELECT count(nip) as putra from tb_pegawai where status='PNS'");
 	while ($data= $sql->fetch_assoc()) {
 	
 		$putra=$data['putra'];
@@ -60,7 +63,7 @@
 ?>
 
 <?php
-	$sql = $koneksi->query("SELECT count(nip) as putri from tb_pegawai where status='Honorer'");
+	$sql = $koneksi->query("SELECT count(nip) as putri from tb_pegawai where status='PPNPN'");
 	while ($data= $sql->fetch_assoc()) {
 	
 		$putri=$data['putri'];
@@ -103,7 +106,7 @@
                     <?php echo $putra;  ?>
                 </h3>
 
-                <p>Status Pegawai</p>
+                <p>Status PNS</p>
             </div>
             <div class="icon">
                 <i class="ion ion-pie-graph"></i>
@@ -121,7 +124,7 @@
                     <?php echo $putri; ?>
                 </h3>
 
-                <p>Status Honorer</p>
+                <p>Status PPNPN</p>
             </div>
             <div class="icon">
                 <i class="ion ion-pie-graph"></i>

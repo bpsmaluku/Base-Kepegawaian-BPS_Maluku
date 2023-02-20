@@ -36,23 +36,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td style="width: 100px">
-                                <b>Alamat</b>
-                            </td>
-                            <td>:
-                                <?php echo $data_cek['ALAMAT']; ?>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="width: 100px">
-                                <b>No HP</b>
-                            </td>
-                            <td>:
-                                <?php echo $data_cek['NO_HP']; ?>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="width: 100px">
+                            <td style="width: 140px">
                                 <b>Status</b>
                             </td>
                             <td>:
@@ -60,15 +44,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td style="width: 100px">
-                                <b>Jabatan</b>
-                            </td>
-                            <td>:
-                                <?php echo $data_cek['JABATAN']; ?>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="width: 100px">
+                            <td style="width: 140px">
                                 <b>Dosir</b>
                             </td>
                             <td>:
@@ -76,7 +52,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td style="width: 100px">
+                            <td style="width: 140px">
                                 <b>Rak</b>
                             </td>
                             <td>:
@@ -109,7 +85,7 @@
             </div>
             <div class="card-body">
                 <div class="text-center">
-                    <img src="foto/<?php echo $data_cek['FOTO']; ?>" width="150px" />
+                    <img src="foto/<?php echo $data_cek['FOTO']; ?>" width="160px" />
                 </div>
 
                 <h3 class="profile-username text-center">
