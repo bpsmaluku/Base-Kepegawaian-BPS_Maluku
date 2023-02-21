@@ -17,32 +17,6 @@
             <h6>Sistem Manajemen File</h6>
         </h3>
     </div>
-    <!-- <form action="" method="post" enctype="multipart/form-data">
-        <div class="card-body">
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Nama Perusahaan</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" id="nama_profil" name="nama_profil"
-                        value="<?php echo $data_cek['NAMA_PROFIL']; ?>" readonly />
-                </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Alamat</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" id="alamat" name="alamat"
-                        value="<?php echo $data_cek['ALAMAT']; ?>" readonly />
-                </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Bidang</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" id="bidang" name="bidang"
-                        value="<?php echo $data_cek['BIDANG']; ?>" readonly />
-                </div>
-            </div>
-
-        </div>
-    </form> -->
 </div>
 
 <?php

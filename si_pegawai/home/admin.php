@@ -11,9 +11,15 @@
     <div class="card-header">
         <h3 class="card-title">
             <h1>
-                <b>SMILE</b>
+                <br><br><br><br>
+                <b>
+                    <center>SMILE</center>
+                </b>
             </h1>
-            <h6>Sistem Manajemen File</h6>
+            <h4>
+                <center>Sistem Manajemen File</center>
+            </h4>
+            <br><br><br><br><br><br>
         </h3>
     </div>
     <!-- <div class="card-header">
@@ -115,8 +121,7 @@
             <div class="icon">
                 <i class="ion ion-pie-graph"></i>
             </div>
-            <a href="#" class="small-box-footer">Informasi
-            </a>
+            <a href="#" class="small-box-footer">Informasi</a>
         </div>
     </div>
     <!-- ./col -->
@@ -133,8 +138,7 @@
             <div class="icon">
                 <i class="ion ion-pie-graph"></i>
             </div>
-            <a href="#" class="small-box-footer">Informasi
-            </a>
+            <a href="#" class="small-box-footer">Informasi</a>
         </div>
     </div>
     <!-- ./col -->
@@ -151,7 +155,6 @@
             <div class="icon">
                 <i class="ion ion-android-happy"></i>
             </div>
-            <a href="#" class="small-box-footer">Informasi
-            </a>
+            <a href="#" class="small-box-footer">Informasi</a>
         </div>
     </div>
