@@ -40,23 +40,6 @@
                 </div>
             </div>
 
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label">No HP</label>
-                <div class="col-sm-6">
-                    <input type="tect" class="form-control" id="NO_HP" name="NO_HP" placeholder="NO_HP">
-                </div>
-            </div>
-
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Foto Pengguna</label>
-                <div class="col-sm-6">
-                    <input type="file" id="FOTO" name="foto">
-                    <p class="help-block">
-                        <font color="red">"Format file Jpg/Png"</font>
-                    </p>
-                </div>
-            </div>
-
         </div>
         <div class="card-footer">
             <input type="submit" name="Simpan" value="Simpan" class="btn btn-info">
@@ -78,7 +61,6 @@ $sumber = @$_FILES['foto']['tmp_name'];
 			'".$_POST['username']."',
 			'".$_POST['password']."',
 			'".$_POST['level']."',
-			'".$_POST['NO_HP']."',
             '".$nama_file."')";
         $query_simpan = mysqli_query($koneksi, $sql_simpan);
         mysqli_close($koneksi);

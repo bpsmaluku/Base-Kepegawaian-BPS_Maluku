@@ -71,7 +71,7 @@
                     <a href="index.php" class="nav-link">
                         <font color="white">
                             <b>
-                                <img src="./dist/img/Asset 1.png" width="25px" />
+                                <img src=" ./dist/img/Asset 1.png" width="25px" />
                                 <?php echo $nama; ?>
                             </b>
                         </font>

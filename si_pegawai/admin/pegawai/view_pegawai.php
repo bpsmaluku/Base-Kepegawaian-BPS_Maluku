@@ -85,7 +85,7 @@
             </div>
             <div class="card-body">
                 <div class="text-center">
-                    <img src="foto/<?php echo $data_cek['FOTO']; ?>" width="160px" />
+                    <img src="foto/<?php echo $data_cek['FOTO']; ?>" width="180px" />
                 </div>
 
                 <h3 class="profile-username text-center">
