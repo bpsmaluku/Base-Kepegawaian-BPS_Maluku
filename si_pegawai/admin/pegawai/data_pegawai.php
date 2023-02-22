@@ -6,22 +6,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
-
     <style>
-    #har {
-        background-color: #1a3e5e;
+    .ha-card-header {
+        background-color: #2f4c6e;
     }
     </style>
 </head>
 
 <body>
     <div class="card card-info">
-        <div id="har">
-            <br>
+        <div class="ha-card-header">
             <center>
-                <font color="white">Data Pegawai</font>
+                <br>
+                <font color="white">
+                    <h2>Data Pegawai</h2>
+                </font>
+                <br>
             </center>
-            <br>
         </div>
         <!-- /.card-header -->
         <div class="card-body">
@@ -36,18 +37,18 @@
                         <tr>
                             <th>No</th>
                             <th>NIP</th>
-                            <th>NAMA</th>
-                            <th>STATUS</th>
-                            <th>DOSIR</th>
-                            <th>RAK</th>
-                            <th>AKSI</th>
+                            <th>Nama</th>
+                            <th>Status</th>
+                            <th>Dosir</th>
+                            <th>Rak</th>
+                            <th>Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
 
                         <?php
               $no = 1;
-              $sql = $koneksi->query("select * from tb_pegawai");
+			  $sql = $koneksi->query("SELECT * from tb_pegawai");
               while ($data= $sql->fetch_assoc()) {
             ?>
 
@@ -70,14 +71,12 @@
                             <td>
                                 <?php echo $data['RAK']; ?>
                             </td>
+
                             <td>
-                                <a href="?page=edit-pegawai&kode=<?php echo $data['NIP']; ?>" title="Ubah"
-                                    class="btn btn-success btn-sm">
-                                    <i class="fa fa-edit"></i>
-                                </a>
                                 <a href="?page=view-pegawai&kode=<?php echo $data['NIP']; ?>" title="Detail"
                                     class="btn btn-info btn-sm">
                                     <i class="fa fa-eye"></i>
+                                </a>
                                 </a>
                                 <a href="?page=del-pegawai&kode=<?php echo $data['NIP']; ?>"
                                     onclick="return confirm('Apakah anda yakin hapus data ini ?')" title="Hapus"
@@ -94,8 +93,7 @@
                 </table>
             </div>
         </div>
+        <!-- /.card-body -->
 </body>
 
 </html>
-
-<!-- /.card-body -->

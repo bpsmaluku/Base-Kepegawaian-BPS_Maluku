@@ -24,15 +24,6 @@
     <link rel="stylesheet" href="dist/css/adminlte.min.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-    <style>
-    .login-box {
-        background-color: #1a3e5e;
-    }
-
-    .hold-transition {
-        background-color: #1a3e5e;
-    }
-    </style>
 </head>
 
 <body class="hold-transition login-page">
@@ -53,7 +44,7 @@
                     </a>
                 </div>
                 <center>
-                    <img src="dist/img/Asset 1.png" width=180px />
+                    <img src="dist/img/PNG/Asset 1.png" width=180px />
                     <br>
                     <br>
                 </center>
