@@ -63,6 +63,20 @@
                 </td>
             </tr>
             <tr>
+                <td>Alamat</td>
+                <td>:</td>
+                <td>
+                    <?php echo $data['ALAMAT']; ?>
+                </td>
+            </tr>
+            <tr>
+                <td>No HP</td>
+                <td>:</td>
+                <td>
+                    <?php echo $data['NO_HP']; ?>
+                </td>
+            </tr>
+            <tr>
                 <td>Status</td>
                 <td>:</td>
                 <td>
@@ -70,17 +84,10 @@
                 </td>
             </tr>
             <tr>
-                <td>Dosir</td>
+                <td>Jabatan</td>
                 <td>:</td>
                 <td>
-                    <?php echo $data['DOSIR']; ?>
-                </td>
-            </tr>
-            <tr>
-                <td>Rak</td>
-                <td>:</td>
-                <td>
-                    <?php echo $data['RAK']; ?>
+                    <?php echo $data['JABATAN']; ?>
                 </td>
             </tr>
             <?php } ?>
