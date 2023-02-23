@@ -15,7 +15,7 @@
     <link href="css/style.css" rel="stylesheet">
     <style>
     .ha-card-header {
-        background-image: url("bps1.png");
+        /* background-image: url("bps1.png"); */
         idth: 100%;
         height: 100%;
         overflow: hidden;
@@ -35,21 +35,21 @@
         <div class="ha-card-header">
             <h3 class="card-title">
                 <h1>
-                    <br><br><br><br>
-                    <b>
+                    <b><br><br>
                         <font color="red" size="50px">
-                            <center>SMILE&#128522;</center>
+                            <img src="12.png" alt="">
+                            <!-- <center>SMILE&#128522;</center> -->
                         </font>
+                        <br><br><br>
                     </b>
                 </h1>
                 <h4>
                     <b>
                         <center>
-                            <font color="red" size="15px">Sistem Manajemen File </font>
+                            <!-- <font color="red" size="15px">Sistem Manajemen File </font> -->
                         </center>
                     </b>
                 </h4>
-                <br><br><br><br><br><br>
             </h3>
         </div>
     </div>
