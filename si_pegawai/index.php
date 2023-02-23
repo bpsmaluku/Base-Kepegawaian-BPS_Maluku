@@ -51,6 +51,10 @@
     .main-header {
         background-color: #2f4c6e;
     }
+
+    .main-footer {
+        background-color: #2f4c6e;
+    }
     </style>
 </head>
 
@@ -288,14 +292,18 @@
         <!-- /.content-wrapper -->
 
         <footer class="main-footer">
-            <div class="float-right d-none d-sm-block">
+            <div class="float-right d-none d-sm-block" color="white">
                 Copyright &copy;
                 <a target="_blank" href="https:/github.com/">
-                    <strong> BPS PROVINSI MALUKU</strong>
+                    <strong>
+                        <font color="white">BPS PROVINSI MALUKU</font>
+                    </strong>
                 </a>
                 All rights reserved.
             </div>
-            <b>Created 2023</b>
+            <b>
+                <font color="white">Created 2023</font>
+            </b>
         </footer>
 
         <!-- Control Sidebar -->

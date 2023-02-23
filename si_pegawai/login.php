@@ -24,6 +24,11 @@
     <link rel="stylesheet" href="dist/css/adminlte.min.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <style>
+    .login-box {
+        background-color: #2f4c6e;
+    }
+    </style>
 </head>
 
 <body class="hold-transition login-page">
@@ -34,7 +39,7 @@
             <div class="card-body login-card-body">
                 <div class="login-logo">
                     <a href="login.php">
-                        <font color="blue">
+                        <font color="#2f4c6e">
                             <br>
                             <b>
                                 <h4> - SMILE - </h4>
@@ -93,10 +98,6 @@
 </html>
 
 <?php
-
-
-
-
 
 if (isset($_POST['btnLogin'])) {  
 	//anti inject sql

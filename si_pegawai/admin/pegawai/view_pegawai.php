@@ -8,7 +8,7 @@
 ?>
 <div class="row">
 
-    <div class="col-md-8">
+    <div class="col-md-12">
         <div class="card card-info">
             <div class="card-header">
                 <h3 class="card-title">Detail Pegawai</h3>
@@ -70,31 +70,4 @@
             </div>
         </div>
     </div>
-
-    <div class="col-md-4">
-        <div class="card card-success">
-            <div class="card-header">
-                <center>
-                    <h3 class="card-title">
-                        Foto Pegawai
-                    </h3>
-                </center>
-
-                <div class="card-tools">
-                </div>
-            </div>
-            <div class="card-body">
-                <div class="text-center">
-                    <img src="foto/<?php echo $data_cek['FOTO']; ?>" width="180px" />
-                </div>
-
-                <h3 class="profile-username text-center">
-                    <?php echo $data_cek['NIP']; ?>
-                    -
-                    <?php echo $data_cek['NAMA']; ?>
-                </h3>
-            </div>
-        </div>
-    </div>
-
 </div>

@@ -9,21 +9,21 @@
 
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">NIP</label>
-                <div class="col-sm-5">
-                    <input type="text" class="form-control" id="nip" name="nip" placeholder="NIP" required>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="nip" name="nip" placeholder="nip" required>
                 </div>
             </div>
 
             <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Nama Pegawai</label>
-                <div class="col-sm-5">
-                    <input type="text" class="form-control" id="NAMA" name="nama" placeholder="Nama Pegawai" required>
+                <label class="col-sm-2 col-form-label">Nama</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="nama" name="nama" placeholder="nama">
                 </div>
             </div>
 
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Status</label>
-                <div class="col-sm-5">
+                <div class="col-sm-4">
                     <select name="status" id="status" class="form-control">
                         <option>- Pilih -</option>
                         <option>PNS</option>
@@ -33,53 +33,37 @@
             </div>
 
             <div class="form-group row">
-                <label class="col-sm-2 col-form-label">DOSIR</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" id="DOSIR" name="dosir" placeholder="dosir" required>
-                </div>
-            </div>
-
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label">RAK</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" id="RAK" name="rak" placeholder="rak" required>
-                </div>
-            </div>
-
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Foto Pegawai</label>
+                <label class="col-sm-2 col-form-label">Dosir</label>
                 <div class="col-sm-6">
-                    <input type="file" id="FOTO" name="foto">
-                    <p class="help-block">
-                        <font color="red">"Format file Jpg/Png"</font>
-                    </p>
+                    <input type="text" class="form-control" id="dosir" name="dosir" placeholder="Dosir">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Rak</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="rak" name="rak" placeholder="rak">
                 </div>
             </div>
 
         </div>
         <div class="card-footer">
             <input type="submit" name="Simpan" value="Simpan" class="btn btn-info">
-            <a href="?page=data-pegawai" title="Kembali" class="btn btn-secondary">Batal</a>
+            <a href="?page=data-pengguna" title="Kembali" class="btn btn-secondary">Batal</a>
         </div>
     </form>
 </div>
 
 <?php
-	$sumber = @$_FILES['foto']['tmp_name'];
-	$target = 'foto/';
-	$nama_file = @$_FILES['foto']['name'];
-	$pindah = move_uploaded_file($sumber, $target.$nama_file);
 
     if (isset ($_POST['Simpan'])){
-
-		if(!empty($sumber)){
-        $sql_simpan = "INSERT INTO tb_pegawai (nip, nama, status, dosir, rak, foto) VALUES (
-            '".$_POST['nip']."',
-			'".$_POST['nama']."',
-			'".$_POST['status']."',
-			'".$_POST['dosir']."',
-			'".$_POST['rak']."',
-            '".$nama_file."')";
+    //mulai proses simpan data
+        $sql_simpan = "INSERT INTO tb_pegawai (nip,nama,status,dosir,rak) VALUES (
+        '".$_POST['nip']."',
+        '".$_POST['nama']."',
+        '".$_POST['status']."',
+        '".$_POST['dosir']."',
+        '".$_POST['rak']."')";
         $query_simpan = mysqli_query($koneksi, $sql_simpan);
         mysqli_close($koneksi);
 
@@ -97,16 +81,5 @@
           window.location = 'index.php?page=add-pegawai';
           }
       })</script>";
-	}
-	}
-    elseif(empty($sumber)){
-		echo "<script>
-		Swal.fire({title: 'Gagal, Foto Wajib Diisi',text: '',icon: 'error',confirmButtonText: 'OK'
-		}).then((result) => {
-			if (result.value) {
-				window.location = 'index.php?page=add-pegawai';
-			}
-		})</script>";
-	}
-	}
+    }}
      //selesai proses simpan data

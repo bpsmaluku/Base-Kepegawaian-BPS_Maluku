@@ -49,19 +49,14 @@
 </div>
 
 <?php
-$sumber = @$_FILES['foto']['tmp_name'];
-	$target = 'foto/';
-	$nama_file = @$_FILES['foto']['name'];
-	$pindah = move_uploaded_file($sumber, $target.$nama_file);
 
     if (isset ($_POST['Simpan'])){
     //mulai proses simpan data
-        $sql_simpan = "INSERT INTO tb_pengguna (nama_pengguna,username,password,level,no_hp,foto) VALUES (
-			'".$_POST['nama_pengguna']."',
-			'".$_POST['username']."',
-			'".$_POST['password']."',
-			'".$_POST['level']."',
-            '".$nama_file."')";
+        $sql_simpan = "INSERT INTO tb_pengguna (nama_pengguna,username,password,level) VALUES (
+        '".$_POST['nama_pengguna']."',
+        '".$_POST['username']."',
+        '".$_POST['password']."',
+        '".$_POST['level']."')";
         $query_simpan = mysqli_query($koneksi, $sql_simpan);
         mysqli_close($koneksi);
 

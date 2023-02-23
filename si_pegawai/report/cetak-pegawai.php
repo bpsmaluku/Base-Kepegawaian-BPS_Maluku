@@ -51,9 +51,6 @@
                 <td>
                     <?php echo $data['NIP']; ?>
                 </td>
-                <td rowspan="6" align="center">
-                    <img src="../foto/<?php echo $data['FOTO']; ?>" width="150px" />
-                </td>
             </tr>
             <tr>
                 <td>Nama</td>
