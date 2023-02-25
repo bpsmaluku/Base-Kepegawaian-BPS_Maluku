@@ -8,7 +8,7 @@
         <div class="card-body">
 
             <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Nip</label>
+                <label class="col-sm-2 col-form-label">NIP</label>
                 <div class="col-sm-6">
                     <input type="text" class="form-control" id="nip" name="nip" placeholder="nip" required>
                 </div>
@@ -33,14 +33,14 @@
             </div>
 
             <div class="form-group row">
-                <label class="col-sm-2 col-form-label">dosir</label>
+                <label class="col-sm-2 col-form-label">Dosir</label>
                 <div class="col-sm-6">
-                    <input type="text" class="form-control" id="dosir" name="dosir" placeholder="dosir">
+                    <input type="text" class="form-control" id="dosir" name="dosir" placeholder="Dosir">
                 </div>
             </div>
 
             <div class="form-group row">
-                <label class="col-sm-2 col-form-label">rak</label>
+                <label class="col-sm-2 col-form-label">Rak</label>
                 <div class="col-sm-6">
                     <input type="text" class="form-control" id="rak" name="rak" placeholder="rak">
                 </div>
@@ -62,7 +62,7 @@
         '".$_POST['nip']."',
         '".$_POST['nama']."',
         '".$_POST['status']."',
-		'".$_POST['dosir']."',
+        '".$_POST['dosir']."',
         '".$_POST['rak']."')";
         $query_simpan = mysqli_query($koneksi, $sql_simpan);
         mysqli_close($koneksi);

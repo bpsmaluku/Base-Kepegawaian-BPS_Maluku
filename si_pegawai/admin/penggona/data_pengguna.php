@@ -7,20 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
     <style>
-    #har {
-        background-color: #1a3e5e;
+    .ha-card-header {
+        background-color: #2f4c6e;
     }
     </style>
 </head>
 
 <body>
     <div class="card card-info">
-        <div id="har">
-            <br>
+        <div class="ha-card-header">
             <center>
-                <font color="white">Data Pengguna</font>
+                <br>
+                <font color="white">
+                    <h2>Data Penguna</h2>
+                </font>
+                <br>
             </center>
-            <br>
         </div>
         <!-- /.card-header -->
         <div class="card-body">
@@ -28,7 +30,6 @@
                 <div>
                     <a href="?page=add-pengguna" class="btn btn-primary">
                         <i class="fa fa-edit"></i> Tambah Data</a>
-
                 </div>
                 <br>
                 <table id="example1" class="table table-bordered table-striped">
@@ -83,8 +84,7 @@
                 </table>
             </div>
         </div>
+        <!-- /.card-body -->
 </body>
 
 </html>
-
-<!-- /.card-body -->

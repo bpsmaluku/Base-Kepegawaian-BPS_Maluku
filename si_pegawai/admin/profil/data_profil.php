@@ -7,20 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
     <style>
-    #har {
-        background-color: #1a3e5e;
+    .ha-card-header {
+        background-color: #2f4c6e;
     }
     </style>
 </head>
 
 <body>
     <div class="card card-info">
-        <div id="har">
-            <br>
+        <div class="ha-card-header">
             <center>
-                <font color="white">Profil Perusahaan</font>
+                <br>
+                <font color="white">
+                    <h2>Provil Perusahaan</h2>
+                </font>
+                <br>
             </center>
-            <br>
         </div>
         <!-- /.card-header -->
         <div class="card-body">
@@ -68,8 +70,7 @@
                 </table>
             </div>
         </div>
+        <!-- /.card-body -->
 </body>
 
 </html>
-
-<!-- /.card-body -->

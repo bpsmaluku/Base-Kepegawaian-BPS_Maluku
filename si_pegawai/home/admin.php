@@ -1,3 +1,10 @@
+<?php
+
+        $sql_cek = "SELECT * FROM tb_profil";
+        $query_cek = mysqli_query($koneksi, $sql_cek);
+		$data_cek = mysqli_fetch_array($query_cek,MYSQLI_BOTH);
+		{
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,66 +14,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
     <style>
-    .harfely-card-header {
-        /* width: 50%;
-        height: 100%; */
+    .ha-card-header {
+        /* background-image: url("bps1.png"); */
+        width: 100%;
+        height: 100%;
         overflow: hidden;
         position: relative;
-        background-image: url("bps1.png");
-        font-style: color=#354c63;
-        background-size: cover;
-        background-repeat: no-repeat;
-        /* position: absolute; */
-        text-transform: uppercase;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         text-align: center;
         justify-content: center;
-        animation: change 30s infinite ease-in-out;
-        font-size: xx-large;
-
+        animation: change 10s infinite ease-in-out
     }
     </style>
 </head>
 
 <body>
     <div class="card card-info">
-        <div class="harfely-card-header col-md-12">
-            <h3 class="card-title">
-                <h1>
-                    <br><br>
-                    <b>
-                        <font size=" 40px" color="red">
-                            <center>SMILE &#128513;</center>
-                        </font>
-                    </b>
-                </h1>
-                <h4>
-                    <font color="red">
-                        <b>
-                            <center>Sistem Manajemen File</center>
-                        </b>
-                    </font>
-                </h4>
-                <br><br>
-            </h3>
+        <div class="ha-card-header">
+            <img src="sel.png" alt="">
         </div>
-
     </div>
 </body>
 
 </html>
-
-<?php
-
-        $sql_cek = "SELECT * FROM tb_profil";
-        $query_cek = mysqli_query($koneksi, $sql_cek);
-		$data_cek = mysqli_fetch_array($query_cek,MYSQLI_BOTH);
-		{
-
-		
-?>
 
 
 <?php
@@ -81,6 +53,7 @@
 <?php
 	$sql = $koneksi->query("SELECT count(nip) as putra from tb_pegawai where status='PNS'");
 	while ($data= $sql->fetch_assoc()) {
+	
 		$putra=$data['putra'];
 	}
 ?>
@@ -102,7 +75,7 @@
 ?>
 
 <div class="row">
-    <div class="col-lg-3 col-6">
+    <div class="col-lg-4 col-7">
         <!-- small box -->
         <div class="small-box bg-primary">
             <div class="inner">
@@ -121,7 +94,7 @@
         </div>
     </div>
     <!-- ./col -->
-    <div class="col-lg-3 col-6">
+    <div class="col-lg-4 col-7">
         <!-- small box -->
         <div class="small-box bg-success">
             <div class="inner">
@@ -138,7 +111,7 @@
         </div>
     </div>
     <!-- ./col -->
-    <div class="col-lg-3 col-6">
+    <div class="col-lg-4 col-7">
         <!-- small box -->
         <div class="small-box bg-danger">
             <div class="inner">
@@ -155,19 +128,3 @@
         </div>
     </div>
     <!-- ./col -->
-    <div class="col-lg-3 col-6">
-        <!-- small box -->
-        <div class="small-box bg-warning">
-            <div class="inner">
-                <h3>
-                    <?php echo $boyong;  ?>
-                </h3>
-
-                <p>Pengguna Sistem</p>
-            </div>
-            <div class="icon">
-                <i class="ion ion-android-happy"></i>
-            </div>
-            <a href="#" class="small-box-footer">Informasi</a>
-        </div>
-    </div>

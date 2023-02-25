@@ -26,11 +26,7 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
     <style>
     .login-box {
-        background-color: #1a3e5e;
-    }
-
-    .hold-transition {
-        background-color: #1a3e5e;
+        background-color: #2f4c6e;
     }
     </style>
 </head>
@@ -43,7 +39,7 @@
             <div class="card-body login-card-body">
                 <div class="login-logo">
                     <a href="login.php">
-                        <font color="blue">
+                        <font color="#2f4c6e">
                             <br>
                             <b>
                                 <h4> - SMILE - </h4>
@@ -53,7 +49,7 @@
                     </a>
                 </div>
                 <center>
-                    <img src="dist/img/Asset 1.png" width=180px />
+                    <img src="dist/img/PNG/Asset 1.png" width=180px />
                     <br>
                     <br>
                 </center>
@@ -102,10 +98,6 @@
 </html>
 
 <?php
-
-
-
-
 
 if (isset($_POST['btnLogin'])) {  
 	//anti inject sql
