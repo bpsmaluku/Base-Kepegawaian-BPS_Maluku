@@ -1,3 +1,12 @@
+<?php
+
+    if(isset($_GET['kode'])){
+        $sql_cek = "SELECT * FROM tb_pegawai WHERE nip='".$_GET['kode']."'";
+        $query_cek = mysqli_query($koneksi, $sql_cek);
+        $data_cek = mysqli_fetch_array($query_cek,MYSQLI_BOTH);
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,6 +39,10 @@
                 <div>
                     <a href="?page=add-pegawai" class="btn btn-primary">
                         <i class="fa fa-edit"></i> Tambah Data</a>
+
+                    <a href="./report/cetak-pegawai1.php?nip=<?php echo $data_cek['NIP']; ?>" target=" _blank"
+                        title="Cetak Data Pegawai" class="btn btn-primary">Print</a>
+                    </a>
                 </div>
                 <br>
                 <table id="example1" class="table table-bordered table-striped">

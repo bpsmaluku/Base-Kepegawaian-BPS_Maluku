@@ -16,7 +16,7 @@
     <style>
     .ha-card-header {
         /* background-image: url("bps1.png"); */
-        idth: 100%;
+        width: 100%;
         height: 100%;
         overflow: hidden;
         position: relative;
@@ -33,24 +33,7 @@
 <body>
     <div class="card card-info">
         <div class="ha-card-header">
-            <h3 class="card-title">
-                <h1>
-                    <b><br><br>
-                        <font color="red" size="50px">
-                            <img src="12.png" alt="">
-                            <!-- <center>SMILE&#128522;</center> -->
-                        </font>
-                        <br><br><br>
-                    </b>
-                </h1>
-                <h4>
-                    <b>
-                        <center>
-                            <!-- <font color="red" size="15px">Sistem Manajemen File </font> -->
-                        </center>
-                    </b>
-                </h4>
-            </h3>
+            <img src="sel.png" alt="">
         </div>
     </div>
 </body>
@@ -92,7 +75,7 @@
 ?>
 
 <div class="row">
-    <div class="col-lg-3 col-6">
+    <div class="col-lg-4 col-7">
         <!-- small box -->
         <div class="small-box bg-primary">
             <div class="inner">
@@ -111,7 +94,7 @@
         </div>
     </div>
     <!-- ./col -->
-    <div class="col-lg-3 col-6">
+    <div class="col-lg-4 col-7">
         <!-- small box -->
         <div class="small-box bg-success">
             <div class="inner">
@@ -128,7 +111,7 @@
         </div>
     </div>
     <!-- ./col -->
-    <div class="col-lg-3 col-6">
+    <div class="col-lg-4 col-7">
         <!-- small box -->
         <div class="small-box bg-danger">
             <div class="inner">
@@ -145,19 +128,3 @@
         </div>
     </div>
     <!-- ./col -->
-    <div class="col-lg-3 col-6">
-        <!-- small box -->
-        <div class="small-box bg-warning">
-            <div class="inner">
-                <h3>
-                    <?php echo $boyong;  ?>
-                </h3>
-
-                <p>Pengguna Sistem</p>
-            </div>
-            <div class="icon">
-                <i class="ion ion-android-happy"></i>
-            </div>
-            <a href="#" class="small-box-footer">Informasi</a>
-        </div>
-    </div>
