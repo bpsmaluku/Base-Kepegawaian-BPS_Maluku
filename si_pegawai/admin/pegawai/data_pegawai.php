@@ -39,13 +39,11 @@
                 <div>
                     <a href="?page=add-pegawai" class="btn btn-primary">
                         <i class="fa fa-edit"></i> Tambah Data</a>
-
-                    <a href="./report/cetak-pegawai1.php?nip=<?php echo $data_cek['NIP']; ?>" target=" _blank"
-                        title="Cetak Data Pegawai" class="btn btn-primary">Print</a>
+                    <a target="_blank" href="export_excel.php" class="btn btn-primary"> EXPORT KE EXCEL</a>
                     </a>
                 </div>
                 <br>
-                <table id="example1" class="table table-bordered table-striped">
+                <table id=" example1" class="table table-bordered table-striped">
                     <thead>
                         <tr>
                             <th>No</th>
