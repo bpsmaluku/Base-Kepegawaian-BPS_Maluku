@@ -25,7 +25,7 @@
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
     <style>
-    .login-box {
+    .hold-transition {
         background-color: #2f4c6e;
     }
     </style>
