@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 26, 2023 at 02:58 PM
+-- Generation Time: Feb 23, 2023 at 06:51 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.0.25
 
@@ -74,6 +74,7 @@ INSERT INTO `tb_pegawai` (`NIP`, `NAMA`, `STATUS`, `DOSIR`, `RAK`) VALUES
 ('197510121996031002', 'Jacob Alexander Wattimena', 'PNS', '16', 'II'),
 ('197512192002121003', 'Yeidrus Boften', 'PNS', '42', 'VI'),
 ('197604162007011002', 'Jakob Jepenosa Nanlohy', 'PNS', '53', 'VII'),
+('197606111998031001', 'Richard Philip Thenu SE, M.Si', 'PNS', '18', 'III'),
 ('197609062005021001', 'Anwar Sawerigading', 'PNS', '23', 'III'),
 ('197609092005021009', 'Muhamad Y. Latupono', 'PNS', '23', 'III'),
 ('197609192006041014', 'Yohanes Marthinus Tapar', 'PNS', '51', 'VII'),
@@ -88,6 +89,7 @@ INSERT INTO `tb_pegawai` (`NIP`, `NAMA`, `STATUS`, `DOSIR`, `RAK`) VALUES
 ('197804272008011011', 'Matheos Simon Onisimus Matital', 'PNS', '56', 'VII'),
 ('197805112002121004', 'Iksan Azwar Risahondua', 'PNS', '42', 'VI'),
 ('197806202006041025', 'Eriek Dikson Sohilait', 'PNS', '51', 'VII'),
+('197808022005021006', 'Christian Harry Soplantila S.Pi, M.Si', 'PNS', '40', 'V'),
 ('197810241998031002', 'Bery Anakottapary S.Pi, M.Si', 'PNS', '16', 'II'),
 ('197903162002121003', 'Bader Solissa', 'PNS', '14', '11'),
 ('197903172002121002', 'Tupa Tampubolon S.Kom, M.Si', 'PNS', '42', 'VI'),
@@ -159,6 +161,7 @@ INSERT INTO `tb_pegawai` (`NIP`, `NAMA`, `STATUS`, `DOSIR`, `RAK`) VALUES
 ('198609032011012013', 'Salomina Andarina Tanamal S.Si', 'PNS', '31', 'IV'),
 ('198609142014031002', 'Ahyar Muhazir Rumakey S.Si', 'PNS', '58', 'VIII'),
 ('198612012010032001', 'Pudji Irianingsih S.Si', 'PNS', '32', 'IV'),
+('198612102009022008', 'Herlin Venny Johannes SST, M.Stat', 'PNS', '08', 'I'),
 ('198612132006042001', 'Meitha Delsy Maulany SE', 'PNS', '35', 'V'),
 ('198701012008012001', 'Frisca F. Frans S.Pi.', 'PNS', '55', 'VII'),
 ('198703122009122002', 'Selvia Pattiasina S.ST', 'PNS', '33', 'V'),
@@ -360,7 +363,7 @@ CREATE TABLE `tb_profil` (
 --
 
 INSERT INTO `tb_profil` (`ID_PROFIL`, `NAMA_PROFIL`, `ALAMAT`, `BIDANG`) VALUES
-(1, 'BPS PROVINSI MALUKU', 'MALUKU, Ambon', 'DATA DAN STATISTIKA');
+(1, 'BPS PROVINSI MALUKU', 'MALUKU ', 'DATA DAN STATISTIKA');
 
 --
 -- Indexes for dumped tables

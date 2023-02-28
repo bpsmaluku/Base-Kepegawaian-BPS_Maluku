@@ -49,7 +49,7 @@
         </div>
         <div class="card-footer">
             <input type="submit" name="Simpan" value="Simpan" class="btn btn-info">
-            <a href="?page=data-pengguna" title="Kembali" class="btn btn-secondary">Batal</a>
+            <a href="?page=data-pegawai" title="Kembali" class="btn btn-secondary">Batal</a>
         </div>
     </form>
 </div>

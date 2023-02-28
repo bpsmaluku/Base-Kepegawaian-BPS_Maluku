@@ -59,6 +59,14 @@
                                 <?php echo $data_cek['RAK']; ?>
                             </td>
                         </tr>
+                        <tr>
+                            <td style="width: 140px">
+                                <b class="btn-info">Jumlah pengaksesan</b>
+                            </td>
+                            <td>:<?php 
+                            include ("counter.php"); echo "<p style='color:red; font-weight:enchant_broker_list_dicts(broker)'> $kunjungan[0] </p>";?>kali
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
                 <div class="card-footer">

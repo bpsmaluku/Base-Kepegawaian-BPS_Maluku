@@ -15,8 +15,8 @@
     <link href="css/style.css" rel="stylesheet">
     <style>
     .ha-card-header {
-        /* background-image: url("bps1.png"); */
-        width: 100%;
+        background-image: url("13.png");
+        idth: 100%;
         height: 100%;
         overflow: hidden;
         position: relative;
@@ -33,7 +33,22 @@
 <body>
     <div class="card card-info">
         <div class="ha-card-header">
-            <img src="sel.png" alt="">
+            <h3 class="card-title">
+                <h1>
+                    <br><br><br><br><br>
+                    <font color="red" size="50px">
+                    </font>
+                    </b>
+                </h1>
+                <h4>
+                    <b>
+                        <center>
+
+                        </center>
+                    </b>
+                </h4>
+                <br><br><br><br><br><br><br><br>
+            </h3>
         </div>
     </div>
 </body>
@@ -75,7 +90,7 @@
 ?>
 
 <div class="row">
-    <div class="col-lg-4 col-7">
+    <div class="col-lg-3 col-6">
         <!-- small box -->
         <div class="small-box bg-primary">
             <div class="inner">
@@ -94,7 +109,7 @@
         </div>
     </div>
     <!-- ./col -->
-    <div class="col-lg-4 col-7">
+    <div class="col-lg-3 col-6">
         <!-- small box -->
         <div class="small-box bg-success">
             <div class="inner">
@@ -111,7 +126,7 @@
         </div>
     </div>
     <!-- ./col -->
-    <div class="col-lg-4 col-7">
+    <div class="col-lg-3 col-6">
         <!-- small box -->
         <div class="small-box bg-danger">
             <div class="inner">
@@ -128,3 +143,19 @@
         </div>
     </div>
     <!-- ./col -->
+    <div class="col-lg-3 col-6">
+        <!-- small box -->
+        <div class="small-box bg-warning">
+            <div class="inner">
+                <h3>
+                    <?php echo $boyong;  ?>
+                </h3>
+
+                <p>Pengguna Sistem</p>
+            </div>
+            <div class="icon">
+                <i class="ion ion-android-happy"></i>
+            </div>
+            <a href="#" class="small-box-footer">Informasi</a>
+        </div>
+    </div>

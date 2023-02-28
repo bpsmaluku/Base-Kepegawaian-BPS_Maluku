@@ -1,40 +1,36 @@
 <?php
-    if(isset($_GET['kode'])){
-        $sql_cek = "SELECT * FROM tb_pegawai WHERE nip='".$_GET['kode']."'";
-        $query_cek = mysqli_query($koneksi, $sql_cek);
-        $data_cek = mysqli_fetch_array($query_cek,MYSQLI_BOTH);
-    }
-?>
-<!DOCTYPE html>
-<html>
 
-<head>
-    <title>Data Pegawai Kantor BPS Provinsi Maluku</title>
-</head>
-
-<body>
-    <?php
-	header("Content-type: application/vnd-ms-excel");
-	header("Content-Disposition: attachment; filename=Data Pegawai.xls");
-	?>
-
-    <center>
-        <h1>Data Pegawai Kantor BPS Provinsi Maluku <br /></h1>
-    </center>
-
-    <table border="1">
+  include "inc/koneksi.php";
+  header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
+  header("Content-type: application/x-msdownload");
+  header("Content-Disposition: attachment; filename=Data_Pegawai_BPS.xls");
+  header("Pragma: no-cache");
+  header("Content-Transfer-Encoding: binary ");
+  header("Expires: 0");
+  ?>
+<table width="100%" border="2" cellspacing="0" cellpadding="0">
+    <tbody>
         <tr>
-            <th>No</th>
-            <th>NIP</th>
-            <th>Nama</th>
-            <th>Status</th>
-            <th>Dosir</th>
-            <th>Rak</th>
+            <td>No</td>
+            <td>Nip</td>
+            <td>Nama</td>
+            <td>Status</td>
+            <td>Dosir</td>
+            <td>Rak</td>
         </tr>
+        <?php
+  $i=1;
+  $ambildata=mysqli_query($koneksi,"SELECT * FROM tb_pegawai");
+  while($tampildata=mysqli_fetch_array($ambildata)){
+  ?>
         <tr>
-
-
-    </table>
-</body>
-
-</html>
+            <td><?php echo $i; ?></td>
+            <td><?php echo $tampildata['NIP']; ?></td>
+            <td><?php echo $tampildata['NAMA']; ?></td>
+            <td><?php echo $tampildata['STATUS']; ?></td>
+            <td><?php echo $tampildata['DOSIR']; ?></td>
+            <td><?php echo $tampildata['RAK']; ?></td>
+        </tr>
+        <?php $i=$i+1; } ?>
+    </tbody>
+</table>
