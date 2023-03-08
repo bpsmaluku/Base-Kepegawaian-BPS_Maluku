@@ -32,7 +32,14 @@
                         <i class="fa fa-edit"></i> Tambah Data</a>
                     <a target="_blank" href="export_excel.php" class="btn btn-success"> EXPORT KE EXCEL</a>
                 </div>
-                <br>
+                <tr>
+                    <td style="width: 140px">
+                        <b class="btn-info">Jumlah
+                            pengaksesan :
+                        </b><?php 
+                            include ("counter.php"); echo "<p style='color:red; font-weight:enchant_broker_list_dicts(broker)'> $kunjungan[0] </p>";?>
+                    </td>
+                </tr>
                 <table id="example1" class="table table-bordered table-striped">
                     <thead>
                         <tr>
@@ -85,6 +92,7 @@
                                     <i class="fa fa-trash"></i>
                             </td>
                         </tr>
+
 
                         <?php
               }

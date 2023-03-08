@@ -123,6 +123,7 @@
                         <?php
 						if ($data_level=="Administrator"){
 						?>
+
                         <li class="nav-item">
                             <a href="index.php" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -363,5 +364,6 @@
     </script>
 
 </body>
+
 
 </html>
