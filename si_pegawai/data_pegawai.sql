@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 23, 2023 at 06:51 AM
+-- Generation Time: Mar 28, 2023 at 04:37 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.0.25
 
@@ -74,7 +74,6 @@ INSERT INTO `tb_pegawai` (`NIP`, `NAMA`, `STATUS`, `DOSIR`, `RAK`) VALUES
 ('197510121996031002', 'Jacob Alexander Wattimena', 'PNS', '16', 'II'),
 ('197512192002121003', 'Yeidrus Boften', 'PNS', '42', 'VI'),
 ('197604162007011002', 'Jakob Jepenosa Nanlohy', 'PNS', '53', 'VII'),
-('197606111998031001', 'Richard Philip Thenu SE, M.Si', 'PNS', '18', 'III'),
 ('197609062005021001', 'Anwar Sawerigading', 'PNS', '23', 'III'),
 ('197609092005021009', 'Muhamad Y. Latupono', 'PNS', '23', 'III'),
 ('197609192006041014', 'Yohanes Marthinus Tapar', 'PNS', '51', 'VII'),
@@ -89,9 +88,8 @@ INSERT INTO `tb_pegawai` (`NIP`, `NAMA`, `STATUS`, `DOSIR`, `RAK`) VALUES
 ('197804272008011011', 'Matheos Simon Onisimus Matital', 'PNS', '56', 'VII'),
 ('197805112002121004', 'Iksan Azwar Risahondua', 'PNS', '42', 'VI'),
 ('197806202006041025', 'Eriek Dikson Sohilait', 'PNS', '51', 'VII'),
-('197808022005021006', 'Christian Harry Soplantila S.Pi, M.Si', 'PNS', '40', 'V'),
 ('197810241998031002', 'Bery Anakottapary S.Pi, M.Si', 'PNS', '16', 'II'),
-('197903162002121003', 'Bader Solissa', 'PNS', '14', '11'),
+('197903162002121000', 'Bader Solissa', 'PNS', '14', 'II'),
 ('197903172002121002', 'Tupa Tampubolon S.Kom, M.Si', 'PNS', '42', 'VI'),
 ('197908222002121002', 'Kacong', 'PNS', '13', 'II'),
 ('197909022009011007', 'Sudirman Kau', 'PNS', '14', 'II'),
@@ -161,7 +159,6 @@ INSERT INTO `tb_pegawai` (`NIP`, `NAMA`, `STATUS`, `DOSIR`, `RAK`) VALUES
 ('198609032011012013', 'Salomina Andarina Tanamal S.Si', 'PNS', '31', 'IV'),
 ('198609142014031002', 'Ahyar Muhazir Rumakey S.Si', 'PNS', '58', 'VIII'),
 ('198612012010032001', 'Pudji Irianingsih S.Si', 'PNS', '32', 'IV'),
-('198612102009022008', 'Herlin Venny Johannes SST, M.Stat', 'PNS', '08', 'I'),
 ('198612132006042001', 'Meitha Delsy Maulany SE', 'PNS', '35', 'V'),
 ('198701012008012001', 'Frisca F. Frans S.Pi.', 'PNS', '55', 'VII'),
 ('198703122009122002', 'Selvia Pattiasina S.ST', 'PNS', '33', 'V'),
@@ -185,6 +182,7 @@ INSERT INTO `tb_pegawai` (`NIP`, `NAMA`, `STATUS`, `DOSIR`, `RAK`) VALUES
 ('198808302011012019', 'Fesly', 'PNS', '44', 'VI'),
 ('198809162010122003', 'Roslian Stevani Tience Kainama SST', 'PNS', '28', 'IV'),
 ('198809172011011005', 'Stenly Frans S.Tr.Stat', 'PNS', '47', 'VI'),
+('198811252019032001', 'Tutiasniaty Rumakat, S.si', 'PNS', '81', 'XI'),
 ('198901292011012014', 'Juliana Waitau', 'PNS', '46', 'VI'),
 ('198906192014031001', 'Rendy Titaley S.E.', 'PNS', '66', 'IX'),
 ('198907052011011002', 'Jouns Adhy Makatita', 'PNS', '44', 'VI'),
@@ -255,7 +253,7 @@ INSERT INTO `tb_pegawai` (`NIP`, `NAMA`, `STATUS`, `DOSIR`, `RAK`) VALUES
 ('199512182019121001', 'Rio Erlangga Salamor A.Md.Stat.', 'PNS', '86', 'XI'),
 ('199601102019122001', 'Safira Shohwatil Islamy S.Tr.Stat.', 'PNS', '24', 'III'),
 ('199602152019012004', 'Karisma R. Muthmainnah S.Tr.Stat.', 'PNS', '84', 'XI'),
-('199603172019012002', 'Yosephine Murwanisiwi Riantoby S.Tr.Stat.', 'PNS', '81', 'XI'),
+('199603172019012002', 'Yosephine Murwanisiwi Riantoby S.Tr.Stat.', 'PNS', '82', 'XI'),
 ('199604222019011001', 'Fahmi Arif Habibullah S.Tr.Stat.', 'PNS', '84', 'XI'),
 ('199605102019012002', 'Mira Choirunnisa S.Tr.Stat.', 'PNS', '84', 'XI'),
 ('199605202019012001', 'Rara Batara Putri Kesuma S.Tr.Stat.', 'PNS', '83', 'XI'),
@@ -343,7 +341,9 @@ CREATE TABLE `tb_pengguna` (
 --
 
 INSERT INTO `tb_pengguna` (`ID_PENGGUNA`, `NAMA_PENGGUNA`, `USERNAME`, `PASSWORD`, `LEVEL`) VALUES
-(3, 'Harfely Leipary', 'admin1', 'admin', 'Administrator');
+(3, 'Harfely Leipary', 'admin1', 'admin', 'Administrator'),
+(7, 'a2', 'a2', 'a2', 'Administrator'),
+(8, 'a3', 'a3', 'a3', 'Administrator');
 
 -- --------------------------------------------------------
 
@@ -395,7 +395,7 @@ ALTER TABLE `tb_profil`
 -- AUTO_INCREMENT for table `tb_pengguna`
 --
 ALTER TABLE `tb_pengguna`
-  MODIFY `ID_PENGGUNA` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `ID_PENGGUNA` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `tb_profil`

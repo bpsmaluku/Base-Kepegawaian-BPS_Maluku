@@ -73,12 +73,6 @@
 
 
 <?php
-
-$sumber = @$_FILES['foto']['tmp_name'];
-	$target = 'foto/';
-	$nama_file = @$_FILES['foto']['name'];
-	$pindah = move_uploaded_file($sumber, $target.$nama_file);
-
     if (isset ($_POST['Ubah'])){
     $sql_ubah = "UPDATE tb_pengguna SET
         nama_pengguna='".$_POST['nama_pengguna']."',

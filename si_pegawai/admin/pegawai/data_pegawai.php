@@ -18,7 +18,7 @@
         <div class="ha-card-header">
             <center>
                 <br>
-                <font color="white">
+                <font color="#94C03D">
                     <h2>Data Pegawai</h2>
                 </font>
                 <br>
@@ -32,14 +32,7 @@
                         <i class="fa fa-edit"></i> Tambah Data</a>
                     <a target="_blank" href="export_excel.php" class="btn btn-success"> EXPORT KE EXCEL</a>
                 </div>
-                <tr>
-                    <td style="width: 140px">
-                        <b class="btn-info">Jumlah
-                            pengaksesan :
-                        </b><?php 
-                            include ("counter.php"); echo "<p style='color:red; font-weight:enchant_broker_list_dicts(broker)'> $kunjungan[0] </p>";?>
-                    </td>
-                </tr>
+                <br>
                 <table id="example1" class="table table-bordered table-striped">
                     <thead>
                         <tr>
@@ -47,6 +40,7 @@
                             <th>NIP</th>
                             <th>Nama</th>
                             <th>Status</th>
+                            <th>Kondisi Dokumen</th>
                             <th>Dosir</th>
                             <th>Rak</th>
                             <th>Aksi</th>
@@ -74,6 +68,9 @@
                                 <?php echo $data['STATUS']; ?>
                             </td>
                             <td>
+                                <?php echo $data['KONDISI']; ?>
+                            </td>
+                            <td>
                                 <?php echo $data['DOSIR']; ?>
                             </td>
                             <td>
@@ -85,6 +82,10 @@
                                     class="btn btn-info btn-sm">
                                     <i class="fa fa-eye"></i>
                                 </a>
+                                <a href="?page=edit-pegawai&kode=<?php echo $data['NIP']; ?>" title="Ubah"
+                                    class="btn btn-success btn-sm">
+                                    <i class="fa fa-edit"></i>
+                                </a>
                                 </a>
                                 <a href="?page=del-pegawai&kode=<?php echo $data['NIP']; ?>"
                                     onclick="return confirm('Apakah anda yakin hapus data ini ?')" title="Hapus"
@@ -92,8 +93,6 @@
                                     <i class="fa fa-trash"></i>
                             </td>
                         </tr>
-
-
                         <?php
               }
             ?>

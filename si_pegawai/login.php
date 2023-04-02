@@ -10,7 +10,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>login | SMILE</title>
-    <link rel="icon" href="dist/img/Asset 1.png">
+    <link rel="icon" href="dist/img/PNG/BPS 2.png">
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -48,11 +48,11 @@
                         </font>
                     </a>
                 </div>
-                <center>
-                    <img src="dist/img/PNG/Asset 1.png" width=180px />
+                <!-- <center>
+                    <img src="dist/img/PNG/BPS 2.png" width=180px />
                     <br>
                     <br>
-                </center>
+                </center> -->
                 <form action="" method="post">
                     <div class="input-group mb-3">
                         <input type="text" class="form-control" name="username" placeholder="Username" required>
@@ -72,7 +72,7 @@
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <button type="submit" class="btn btn-primary btn-block btn-flat" name="btnLogin"
+                            <button type="submit" class="btn btn-dark btn-block btn-flat" name="btnLogin"
                                 title="Masuk Sistem">
                                 <b>Masuk</b>
                             </button>
@@ -81,7 +81,12 @@
 
             </div>
         </div>
+
+        <img src="sp.png" alt="">
     </div>
+
+
+
     <!-- /.login-box -->
 
     <!-- jQuery -->

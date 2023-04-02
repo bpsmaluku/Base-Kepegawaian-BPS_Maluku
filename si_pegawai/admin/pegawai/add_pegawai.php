@@ -33,6 +33,17 @@
             </div>
 
             <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Kondisi Dokumen</label>
+                <div class="col-sm-4">
+                    <select name="kondisi" id="kondisi" class="form-control">
+                        <option>- Pilih -</option>
+                        <option>Baik</option>
+                        <option>Rusak</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Dosir</label>
                 <div class="col-sm-6">
                     <input type="text" class="form-control" id="dosir" name="dosir" placeholder="Dosir">
@@ -58,10 +69,11 @@
 
     if (isset ($_POST['Simpan'])){
     //mulai proses simpan data
-        $sql_simpan = "INSERT INTO tb_pegawai (nip,nama,status,dosir,rak) VALUES (
+        $sql_simpan = "INSERT INTO tb_pegawai (nip,nama,status,kondisi, dosir,rak) VALUES (
         '".$_POST['nip']."',
         '".$_POST['nama']."',
         '".$_POST['status']."',
+        '".$_POST['kondisi']."',
         '".$_POST['dosir']."',
         '".$_POST['rak']."')";
         $query_simpan = mysqli_query($koneksi, $sql_simpan);

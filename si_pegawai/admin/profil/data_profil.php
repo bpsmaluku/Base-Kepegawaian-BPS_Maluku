@@ -18,8 +18,8 @@
         <div class="ha-card-header">
             <center>
                 <br>
-                <font color="white">
-                    <h2>Provil Perusahaan</h2>
+                <font color="#94C03D">
+                    <h2>Profil Perusahaan</h2>
                 </font>
                 <br>
             </center>
