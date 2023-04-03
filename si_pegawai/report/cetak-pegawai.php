@@ -51,29 +51,12 @@
                 <td>
                     <?php echo $data['NIP']; ?>
                 </td>
-                <td rowspan="6" align="center">
-                    <img src="../foto/<?php echo $data['FOTO']; ?>" width="150px" />
-                </td>
             </tr>
             <tr>
                 <td>Nama</td>
                 <td>:</td>
                 <td>
                     <?php echo $data['NAMA']; ?>
-                </td>
-            </tr>
-            <tr>
-                <td>Alamat</td>
-                <td>:</td>
-                <td>
-                    <?php echo $data['ALAMAT']; ?>
-                </td>
-            </tr>
-            <tr>
-                <td>No HP</td>
-                <td>:</td>
-                <td>
-                    <?php echo $data['NO_HP']; ?>
                 </td>
             </tr>
             <tr>
@@ -84,10 +67,17 @@
                 </td>
             </tr>
             <tr>
-                <td>Jabatan</td>
+                <td>Dosir</td>
                 <td>:</td>
                 <td>
-                    <?php echo $data['JABATAN']; ?>
+                    <?php echo $data['DOSIR']; ?>
+                </td>
+            </tr>
+            <tr>
+                <td>Rak</td>
+                <td>:</td>
+                <td>
+                    <?php echo $data['RAK']; ?>
                 </td>
             </tr>
             <?php } ?>

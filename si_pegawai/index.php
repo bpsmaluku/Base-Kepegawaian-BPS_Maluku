@@ -27,8 +27,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>SMILE - Sistem Informasi File</title>
-    <link rel="icon" href="dist/img/Asset 1.png" class="img-circle elevation-1">
+    <title>SMILE - Sistem Manajemen File</title>
+    <link rel="icon" href="./dist/img/PNG/BPS 2.png">
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -41,15 +41,19 @@
     <!-- overlayScrollbars -->
     <link rel="stylesheet" href="dist/css/adminlte.min.css">
     <!-- Select2 -->
-    <!-- <link rel="stylesheet" href="plugins/select2/css/select2.min.css">
-    <link rel="stylesheet" href="plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css"> -->
+    <link rel="stylesheet" href="plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
     <!-- Google Font: Source Sans Pro -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
     <!-- Alert -->
     <script src="plugins/alert.js"></script>
     <style>
     .main-header {
-        background-color: #1a3e5e;
+        background-color: #2f4c6e;
+    }
+
+    .main-footer {
+        background-color: #2f4c6e;
     }
     </style>
 </head>
@@ -74,9 +78,9 @@
 
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="index.php" class="nav-link">
-                        <font color="white">
+                        <font color="#94C03D">
                             <b>
-                                <img src=" ./dist/img/Asset 1.png" width="25px" class="img-circle elevation-1" />
+                                <img src=" ./dist/img/PNG/BPS 2.png" class="" width="70px" />
                                 <?php echo $nama; ?>
                             </b>
                         </font>
@@ -90,12 +94,15 @@
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
+
             <!-- Sidebar -->
             <div class="sidebar">
                 <!-- Sidebar user (optional) -->
                 <div class="user-panel mt-2 pb-2 mb-2 d-flex">
                     <div class="image">
-                        <img src="dist/img/Asset 1.png" class="img-circle elevation-1" alt="User Image">
+                        <td rowspan="6" align="">
+                            <img src="dist/img/PNG/BPS 2.png" class="" width="60px" />
+                        </td>
                     </div>
                     <div class="info">
                         <a href="index.php" class="d-block">
@@ -103,6 +110,11 @@
                         </a>
                         <span class="badge badge-success">
                             <?php echo $data_level; ?>
+                        </span>
+                        <span class="badge badge-primary">
+                            Visit Acces :
+                            <?php 
+                            include ("counter.php"); echo "<p style='color:red; font-weight:enchant_broker_list_dicts(broker)'> $kunjungan[0] </p>";?>
                         </span>
                     </div>
                 </div>
@@ -116,6 +128,7 @@
                         <?php
 						if ($data_level=="Administrator"){
 						?>
+
                         <li class="nav-item">
                             <a href="index.php" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -285,14 +298,23 @@
         <!-- /.content-wrapper -->
 
         <footer class="main-footer">
-            <div class="float-right d-none d-sm-block">
-                Copyright &copy;
-                <a target="_blank" href="https://www.youtube.com/channel/UCDxjOzW7F0JOkltlXT6g7AQ">
-                    <strong> elseif software house</strong>
+            <div class="float-right d-none d-sm-block" color="white">
+                Copyright 2023 &copy;
+                <a target="_blank" href="https://maluku.bps.go.id/">
+                    <strong>
+                        <font color="#94C03D">BPS PROVINSI MALUKU</font>
+                    </strong>
                 </a>
                 All rights reserved.
             </div>
-            <b>Created 2020</b>
+            <b>
+
+                <font color="#94C03D">Create By</font>
+                <a target="_blank" href="http://harfely.com">
+                    <font color="gren"> HL</font>
+                </a>
+
+            </b>
         </footer>
 
         <!-- Control Sidebar -->
@@ -352,5 +374,6 @@
     </script>
 
 </body>
+
 
 </html>

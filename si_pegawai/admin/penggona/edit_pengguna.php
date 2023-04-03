@@ -51,15 +51,16 @@
                         <option value="">-- Pilih Level --</option>
                         <?php
                 //menhecek data yg dipilih sebelumnya
-                if ($data_cek['level'] == "Administrator") echo "<option value='Administrator' selected>Administrator</option>";
+                if ($data_cek['LEVEL'] == "Administrator") echo "<option value='Administrator' selected>Administrator</option>";
                 else echo "<option value='Administrator'>Administrator</option>";
 
-                if ($data_cek['level'] == "Sekretaris") echo "<option value='Sekretaris' selected>Sekretaris</option>";
+                if ($data_cek['LEVEL'] == "Sekretaris") echo "<option value='Sekretaris' selected>Sekretaris</option>";
                 else echo "<option value='Sekretaris'>Sekretaris</option>";
             ?>
                     </select>
                 </div>
             </div>
+
 
         </div>
         <div class="card-footer">
@@ -72,7 +73,6 @@
 
 
 <?php
-
     if (isset ($_POST['Ubah'])){
     $sql_ubah = "UPDATE tb_pengguna SET
         nama_pengguna='".$_POST['nama_pengguna']."',

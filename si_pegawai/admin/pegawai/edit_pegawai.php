@@ -1,4 +1,5 @@
 <?php
+
     if(isset($_GET['kode'])){
         $sql_cek = "SELECT * FROM tb_pegawai WHERE nip='".$_GET['kode']."'";
         $query_cek = mysqli_query($koneksi, $sql_cek);
@@ -15,7 +16,13 @@
     <form action="" method="post" enctype="multipart/form-data">
         <div class="card-body">
 
-            <input type='hidden' class="form-control" name="nip" value="<?php echo $data_cek['NIP']; ?>" readonly />
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">NIP</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="nip" name="nip" placeholder="nip"
+                        value="<?php echo $data_cek['NIP']; ?>" readonly />
+                </div>
+            </div>
 
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Nama</label>
@@ -29,14 +36,31 @@
                 <label class="col-sm-2 col-form-label">Status</label>
                 <div class="col-sm-4">
                     <select name="status" id="status" class="form-control">
-                        <option value="">-- Pilih Status --</option>
+                        <option value="">-- Pilih Status Pegawai --</option>
                         <?php
                 //menhecek data yg dipilih sebelumnya
-                if ($data_cek['status_pegawai'] == "PNS") echo "<option value='PNS' selected>PNS</option>";
+                if ($data_cek['STATUS'] == "PNS") echo "<option value='PNS' selected>PNS</option>";
                 else echo "<option value='PNS'>PNS</option>";
 
-                if ($data_cek['status_pegawai'] == "Ppnpn") echo "<option value='PPNNP' selected>PPNPN</option>";
+                if ($data_cek['STATUS'] == "PPNPN") echo "<option value='PPNPN' selected>PPNPN</option>";
                 else echo "<option value='PPNPN'>PPNPN</option>";
+            ?>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Kondisi Dokumen</label>
+                <div class="col-sm-4">
+                    <select name="kondisi" id="kondisi" class="form-control">
+                        <option value="">-- Pilih Kondisi Dokumen --</option>
+                        <?php
+                //menhecek data yg dipilih sebelumnya
+                if ($data_cek['KONDISI'] == "Baik") echo "<option value='Baik' selected>Baik</option>";
+                else echo "<option value='Baik'>Baik</option>";
+
+                if ($data_cek['KONDISI'] == "Rusak") echo "<option value='Rusak' selected>Rusak</option>";
+                else echo "<option value='Rusak'>Rusak</option>";
             ?>
                     </select>
                 </div>
@@ -58,6 +82,7 @@
                 </div>
             </div>
 
+
         </div>
         <div class="card-footer">
             <input type="submit" name="Ubah" value="Simpan" class="btn btn-success">
@@ -69,13 +94,13 @@
 
 
 <?php
-
     if (isset ($_POST['Ubah'])){
-    $sql_ubah = "UPDATE tb_pegawai SET 
-        nama ='".$_POST['nama']."',
-        status ='".$_POST['status']."'
-        dosir ='".$_POST['dosir']."',
-        rak ='".$_POST['rak']."', 
+    $sql_ubah = "UPDATE tb_pegawai SET
+        nama='".$_POST['nama']."',
+        status='".$_POST['status']."',
+        kondisi='".$_POST['kondisi']."',
+        dosir='".$_POST['dosir']."',
+        rak='".$_POST['rak']."'
         WHERE nip='".$_POST['nip']."'";
     $query_ubah = mysqli_query($koneksi, $sql_ubah);
     mysqli_close($koneksi);

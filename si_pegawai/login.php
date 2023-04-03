@@ -10,7 +10,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>login | SMILE</title>
-    <link rel="icon" href="dist/img/Asset 1.png">
+    <link rel="icon" href="dist/img/PNG/BPS 2.png">
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -25,12 +25,8 @@
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
     <style>
-    .login-box {
-        background-color: #1a3e5e;
-    }
-
     .hold-transition {
-        background-color: #1a3e5e;
+        background-color: #2f4c6e;
     }
     </style>
 </head>
@@ -43,7 +39,7 @@
             <div class="card-body login-card-body">
                 <div class="login-logo">
                     <a href="login.php">
-                        <font color="blue">
+                        <font color="#2f4c6e">
                             <br>
                             <b>
                                 <h4> - SMILE - </h4>
@@ -52,11 +48,11 @@
                         </font>
                     </a>
                 </div>
-                <center>
-                    <img src="dist/img/Asset 1.png" width=180px />
+                <!-- <center>
+                    <img src="dist/img/PNG/BPS 2.png" width=180px />
                     <br>
                     <br>
-                </center>
+                </center> -->
                 <form action="" method="post">
                     <div class="input-group mb-3">
                         <input type="text" class="form-control" name="username" placeholder="Username" required>
@@ -76,7 +72,7 @@
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <button type="submit" class="btn btn-primary btn-block btn-flat" name="btnLogin"
+                            <button type="submit" class="btn btn-dark btn-block btn-flat" name="btnLogin"
                                 title="Masuk Sistem">
                                 <b>Masuk</b>
                             </button>
@@ -85,7 +81,12 @@
 
             </div>
         </div>
+
+        <img src="sp.png" alt="">
     </div>
+
+
+
     <!-- /.login-box -->
 
     <!-- jQuery -->
@@ -102,10 +103,6 @@
 </html>
 
 <?php
-
-
-
-
 
 if (isset($_POST['btnLogin'])) {  
 	//anti inject sql

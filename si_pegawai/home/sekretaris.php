@@ -1,90 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title></title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
-    <style>
-    .harfely-card-header {
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        position: relative;
-        background-image: url("kantor-bps-maluku.jpg");
-        font-style: color=#354c63;
-        background-size: cover;
-        background-repeat: no-repeat;
-        /* position: absolute; */
-        text-transform: uppercase;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        text-align: center;
-        justify-content: center;
-        animation: change 10s infinite ease-in-out;
-
-
-    }
-
-    @keyframes change {
-        0% {
-            background-image: url("kantor-bps-maluku.jpg");
-
-        }
-
-        20% {
-            background-image: url("kantor-bps-maluku.jpg");
-        }
-
-        40% {
-            background-image: url("kantor-bps-maluku.jpg");
-        }
-
-        60% {
-            background-image: url("kantor-bps-maluku.jpg");
-        }
-
-        80% {
-            background-image: url("kantor-bps-maluku.jpg");
-        }
-
-        100% {
-            background-image: url("kantor-bps-maluku.jpg");
-        }
-    }
-    </style>
-</head>
-
-<body>
-    <div class="card card-info">
-        <div class="harfely-card-header col-md-12">
-            <h3 class="card-title">
-                <h1>
-                    <br><br><br>
-                    <br>
-                    <b>
-                        <font size=" 40px" color="#DCDCDC">
-                            <center>SMILE &#128513;</center>
-                        </font>
-                    </b>
-                </h1>
-                <h4>
-                    <font color="#DCDCDC">
-                        <center>Sistem Manajemen File</center>
-                    </font>
-
-                </h4>
-                <br><br><br><br><br><br><br>
-            </h3>
-        </div>
-
-    </div>
-</body>
-
-</html>
-
 <?php
 
         $sql_cek = "SELECT * FROM tb_profil";
@@ -95,6 +8,16 @@
 		
 ?>
 
+<div class="card card-info">
+    <div class="card-header">
+        <h3 class="card-title">
+            <h1>
+                <b>SMILE</b>
+            </h1>
+            <h6>Sistem Manajemen File</h6>
+        </h3>
+    </div>
+</div>
 
 <?php
 		}
@@ -108,6 +31,7 @@
 <?php
 	$sql = $koneksi->query("SELECT count(nip) as putra from tb_pegawai where status='PNS'");
 	while ($data= $sql->fetch_assoc()) {
+	
 		$putra=$data['putra'];
 	}
 ?>
@@ -142,7 +66,7 @@
             <div class="icon">
                 <i class="ion ion-person-add"></i>
             </div>
-            <a href="index.php?page=data-pegawai" class="small-box-footer">Selengkapnya
+            <a href="index.php?page=data-santri" class="small-box-footer">Selengkapnya
                 <i class="fas fa-arrow-circle-right"></i>
             </a>
         </div>
@@ -161,7 +85,8 @@
             <div class="icon">
                 <i class="ion ion-pie-graph"></i>
             </div>
-            <a href="#" class="small-box-footer">Informasi</a>
+            <a href="#" class="small-box-footer">Informasi
+            </a>
         </div>
     </div>
     <!-- ./col -->
@@ -178,7 +103,8 @@
             <div class="icon">
                 <i class="ion ion-pie-graph"></i>
             </div>
-            <a href="#" class="small-box-footer">Informasi</a>
+            <a href="#" class="small-box-footer">Informasi
+            </a>
         </div>
     </div>
     <!-- ./col -->
@@ -195,6 +121,7 @@
             <div class="icon">
                 <i class="ion ion-android-happy"></i>
             </div>
-            <a href="#" class="small-box-footer">Informasi</a>
+            <a href="#" class="small-box-footer">Informasi
+            </a>
         </div>
     </div>

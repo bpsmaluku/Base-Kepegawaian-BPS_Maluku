@@ -8,7 +8,7 @@
         <div class="card-body">
 
             <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Nip</label>
+                <label class="col-sm-2 col-form-label">NIP</label>
                 <div class="col-sm-6">
                     <input type="text" class="form-control" id="nip" name="nip" placeholder="nip" required>
                 </div>
@@ -33,14 +33,25 @@
             </div>
 
             <div class="form-group row">
-                <label class="col-sm-2 col-form-label">dosir</label>
-                <div class="col-sm-6">
-                    <input type="text" class="form-control" id="dosir" name="dosir" placeholder="dosir">
+                <label class="col-sm-2 col-form-label">Kondisi Dokumen</label>
+                <div class="col-sm-4">
+                    <select name="kondisi" id="kondisi" class="form-control">
+                        <option>- Pilih -</option>
+                        <option>Baik</option>
+                        <option>Rusak</option>
+                    </select>
                 </div>
             </div>
 
             <div class="form-group row">
-                <label class="col-sm-2 col-form-label">rak</label>
+                <label class="col-sm-2 col-form-label">Dosir</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="dosir" name="dosir" placeholder="Dosir">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Rak</label>
                 <div class="col-sm-6">
                     <input type="text" class="form-control" id="rak" name="rak" placeholder="rak">
                 </div>
@@ -49,7 +60,7 @@
         </div>
         <div class="card-footer">
             <input type="submit" name="Simpan" value="Simpan" class="btn btn-info">
-            <a href="?page=data-pengguna" title="Kembali" class="btn btn-secondary">Batal</a>
+            <a href="?page=data-pegawai" title="Kembali" class="btn btn-secondary">Batal</a>
         </div>
     </form>
 </div>
@@ -58,11 +69,12 @@
 
     if (isset ($_POST['Simpan'])){
     //mulai proses simpan data
-        $sql_simpan = "INSERT INTO tb_pegawai (nip,nama,status,dosir,rak) VALUES (
+        $sql_simpan = "INSERT INTO tb_pegawai (nip,nama,status,kondisi, dosir,rak) VALUES (
         '".$_POST['nip']."',
         '".$_POST['nama']."',
         '".$_POST['status']."',
-		'".$_POST['dosir']."',
+        '".$_POST['kondisi']."',
+        '".$_POST['dosir']."',
         '".$_POST['rak']."')";
         $query_simpan = mysqli_query($koneksi, $sql_simpan);
         mysqli_close($koneksi);
