@@ -28,7 +28,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>SMILE - Sistem Manajemen File</title>
-    <link rel="icon" href="./dist/img/Asset 1.png">
+    <link rel="icon" href="./dist/img/PNG/BPS 2.png">
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -78,9 +78,9 @@
 
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="index.php" class="nav-link">
-                        <font color="white">
+                        <font color="#94C03D">
                             <b>
-                                <img src=" ./dist/img/Asset 1.png" class="img-circle" width="25px" />
+                                <img src=" ./dist/img/PNG/BPS 2.png" class="" width="70px" />
                                 <?php echo $nama; ?>
                             </b>
                         </font>
@@ -101,7 +101,7 @@
                 <div class="user-panel mt-2 pb-2 mb-2 d-flex">
                     <div class="image">
                         <td rowspan="6" align="">
-                            <img src="dist/img/PNG/Asset 1.png" class="img-circle" width="1px" />
+                            <img src="dist/img/PNG/BPS 2.png" class="" width="60px" />
                         </td>
                     </div>
                     <div class="info">
@@ -110,6 +110,11 @@
                         </a>
                         <span class="badge badge-success">
                             <?php echo $data_level; ?>
+                        </span>
+                        <span class="badge badge-primary">
+                            Visit Acces :
+                            <?php 
+                            include ("counter.php"); echo "<p style='color:red; font-weight:enchant_broker_list_dicts(broker)'> $kunjungan[0] </p>";?>
                         </span>
                     </div>
                 </div>
@@ -123,6 +128,7 @@
                         <?php
 						if ($data_level=="Administrator"){
 						?>
+
                         <li class="nav-item">
                             <a href="index.php" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -293,16 +299,21 @@
 
         <footer class="main-footer">
             <div class="float-right d-none d-sm-block" color="white">
-                Copyright &copy;
-                <a target="_blank" href="https:/github.com/">
+                Copyright 2023 &copy;
+                <a target="_blank" href="https://maluku.bps.go.id/">
                     <strong>
-                        <font color="white">BPS PROVINSI MALUKU</font>
+                        <font color="#94C03D">BPS PROVINSI MALUKU</font>
                     </strong>
                 </a>
                 All rights reserved.
             </div>
             <b>
-                <font color="white">Created 2023</font>
+
+                <font color="#94C03D">Create By</font>
+                <a target="_blank" href="http://harfely.com">
+                    <font color="gren"> HL</font>
+                </a>
+
             </b>
         </footer>
 
@@ -363,5 +374,6 @@
     </script>
 
 </body>
+
 
 </html>

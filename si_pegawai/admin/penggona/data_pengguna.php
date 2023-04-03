@@ -18,7 +18,7 @@
         <div class="ha-card-header">
             <center>
                 <br>
-                <font color="white">
+                <font color="#94C03D">
                     <h2>Data Penguna</h2>
                 </font>
                 <br>
